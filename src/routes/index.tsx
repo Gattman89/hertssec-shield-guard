@@ -24,6 +24,7 @@ export const Route = createFileRoute("/")({
       { name: "keywords", content: "Hertfordshire security company, manned guarding Hertfordshire, event security Hertfordshire, construction site security Hertfordshire, SIA licensed security" },
     ],
   }),
+  ssr: false,
   component: Index,
 });
 
