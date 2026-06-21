@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
   KeyRound, UserSquare2, Car, Lock, Phone, Mail, MapPin, Menu, X, Check,
-  Award, Clock, PoundSterling, Facebook, Instagram, Linkedin,
+  Award, Clock, PoundSterling, Facebook, Instagram, Linkedin, FileCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -41,6 +41,7 @@ const services = [
 
 const reasons = [
   { icon: Award, title: "SIA Licensed Personnel" },
+  { icon: FileCheck, title: "Enhanced DBS Checked" },
   { icon: ShieldCheck, title: "Professional and Reliable Service" },
   { icon: MapPin, title: "Local Hertfordshire-Based Company" },
   { icon: Lock, title: "Flexible Security Solutions" },
