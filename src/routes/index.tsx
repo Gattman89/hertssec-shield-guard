@@ -98,7 +98,7 @@ function Header() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
         <a href="#home" className="flex items-center gap-3 shrink-0">
-          <img src={logoAsset.url} alt="HertsSec Security Services" className="h-12 w-auto" />
+          <img src={logoAsset.url} alt="HertsSec Security Services" className="h-16 sm:h-20 w-auto" />
         </a>
         <nav className="hidden lg:flex items-center gap-8">
           {navLinks.map((l) => (
