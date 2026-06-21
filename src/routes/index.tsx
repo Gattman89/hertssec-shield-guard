@@ -351,22 +351,22 @@ function Quote() {
     formRef.current?.reset();
   };
   return (
-    <section id="quote" className="py-24 sm:py-32 relative overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
+    <section id="quote" className="py-16 sm:py-20 relative overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 80% 20%, #B30000 0%, transparent 50%)" }} />
       <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="text-center" data-reveal>
-          <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="flex items-center justify-center gap-3 mb-3">
             <div className="section-divider" />
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-brand">Request a Quote</span>
             <div className="section-divider" />
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold uppercase leading-tight">Get Your Free Security Quote</h2>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold uppercase leading-tight">Get Your Free Security Quote</h2>
+          <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
             Tell us about your requirements and we'll respond within 24 hours with a tailored, competitive quote.
           </p>
         </div>
-        <form ref={formRef} onSubmit={onSubmit} data-reveal className="mt-12 bg-card border border-border rounded-lg p-6 sm:p-10" style={{ boxShadow: "var(--shadow-card)" }}>
-          <div className="grid sm:grid-cols-2 gap-5">
+        <form ref={formRef} onSubmit={onSubmit} data-reveal className="mt-8 bg-card border border-border rounded-lg p-5 sm:p-8" style={{ boxShadow: "var(--shadow-card)" }}>
+          <div className="grid sm:grid-cols-2 gap-4">
             <Field label="Name" required><Input required name="name" /></Field>
             <Field label="Company Name"><Input name="company" /></Field>
             <Field label="Email" required><Input required type="email" name="email" /></Field>
@@ -376,10 +376,10 @@ function Quote() {
             <Field label="Date Required"><Input type="date" name="date" /></Field>
             <Field label="Duration"><Input name="duration" placeholder="e.g. 3 months / one-off" /></Field>
             <div className="sm:col-span-2">
-              <Field label="Message"><Textarea name="message" rows={5} placeholder="Tell us more about your security needs..." /></Field>
+              <Field label="Message"><Textarea name="message" rows={4} placeholder="Tell us more about your security needs..." /></Field>
             </div>
           </div>
-          <Button type="submit" size="lg" className="mt-8 w-full bg-brand hover:bg-brand/90 text-white h-14 text-base font-semibold uppercase tracking-wide">
+          <Button type="submit" size="lg" className="mt-6 w-full bg-brand hover:bg-brand/90 text-white h-12 text-base font-semibold uppercase tracking-wide">
             Request Quote
           </Button>
         </form>
