@@ -197,21 +197,21 @@ function SectionHeader({ eyebrow, title, desc }: { eyebrow: string; title: strin
 
 function About() {
   return (
-    <section id="about" className="py-24 sm:py-32 bg-background">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <section id="about" className="py-16 sm:py-20 bg-background">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
         <div>
           <SectionHeader eyebrow="About Us" title="Hertfordshire's Trusted Security Partner" />
-          <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed" data-reveal>
+          <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed" data-reveal>
             HertsShield Security Services is a Hertfordshire-based security company providing professional manned security solutions across Hertfordshire and surrounding areas. We deliver reliable security services for businesses, events and private clients, focusing on professionalism, visibility and customer service.
           </p>
-          <div className="mt-10 grid grid-cols-3 gap-6" data-reveal>
+          <div className="mt-8 grid grid-cols-3 gap-5" data-reveal>
             {[
-              { n: "10+", l: "Service Lines" },
+              { n: "20+", l: "Years Experience" },
               { n: "24/7", l: "Availability" },
               { n: "100%", l: "SIA Licensed" },
             ].map((s) => (
               <div key={s.l} className="border-l-2 border-brand pl-4">
-                <div className="text-3xl sm:text-4xl font-bold text-foreground">{s.n}</div>
+                <div className="text-2xl sm:text-3xl font-bold text-foreground">{s.n}</div>
                 <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">{s.l}</div>
               </div>
             ))}
@@ -219,14 +219,14 @@ function About() {
         </div>
         <div className="relative" data-reveal>
           <div className="absolute -inset-4 bg-gradient-to-br from-brand/30 to-transparent blur-2xl" />
-          <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-border" style={{ boxShadow: "var(--shadow-card)" }}>
-            <img src={heroImage} alt="HertsShield security officer on duty" className="w-full h-full object-cover" loading="lazy" width={800} height={1000} />
+          <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-border" style={{ boxShadow: "var(--shadow-card)" }}>
+            <img src={heroImage} alt="HertsShield security officer on duty" className="w-full h-full object-cover" loading="lazy" width={800} height={600} />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6">
+            <div className="absolute bottom-5 left-5 right-5">
               <div className="flex items-center gap-3 text-white">
-                <ShieldCheck className="h-8 w-8 text-brand" />
+                <ShieldCheck className="h-7 w-7 text-brand" />
                 <div>
-                  <div className="font-bold uppercase tracking-wide">SIA Approved</div>
+                  <div className="font-bold uppercase tracking-wide text-sm">SIA Approved</div>
                   <div className="text-xs text-white/70">Trained · Licensed · Vetted</div>
                 </div>
               </div>
