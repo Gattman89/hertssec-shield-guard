@@ -102,7 +102,7 @@ function Header() {
           <img
             src={logoAsset.url}
             alt="HertsSec Security Services"
-            className={`w-full object-contain transition-all duration-300 ${scrolled ? "h-[336px] sm:h-[384px]" : "h-[480px] sm:h-[672px] lg:h-[768px]"}`}
+            className={`w-auto transition-all duration-300 ${scrolled ? "h-20 sm:h-24" : "h-28 sm:h-40 lg:h-48"}`}
           />
         </div>
       </a>
