@@ -401,26 +401,26 @@ function Field({ label, required, children }: { label: string; required?: boolea
 
 function Contact() {
   return (
-    <section id="contact" className="py-24 sm:py-32 bg-background">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-6">
-        <a href="tel:07000000000" data-reveal className="group bg-card border border-border rounded-lg p-10 hover:border-brand transition-colors flex items-start gap-5">
-          <div className="h-14 w-14 rounded-md bg-brand flex items-center justify-center shrink-0">
-            <Phone className="h-7 w-7 text-white" />
+    <section id="contact" className="py-16 sm:py-20 bg-background">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-4">
+        <a href="tel:07000000000" data-reveal className="group bg-card border border-border rounded-lg p-8 hover:border-brand transition-colors flex items-start gap-4">
+          <div className="h-12 w-12 rounded-md bg-brand flex items-center justify-center shrink-0">
+            <Phone className="h-6 w-6 text-white" />
           </div>
           <div className="min-w-0">
-            <div className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Call Us</div>
-            <div className="text-2xl sm:text-3xl font-bold group-hover:text-brand transition-colors">07XXX XXX XXX</div>
-            <div className="text-sm text-muted-foreground mt-2">24/7 enquiries — speak to a real person</div>
+            <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Call Us</div>
+            <div className="text-xl sm:text-2xl font-bold group-hover:text-brand transition-colors">07XXX XXX XXX</div>
+            <div className="text-sm text-muted-foreground mt-1">24/7 enquiries — speak to a real person</div>
           </div>
         </a>
-        <a href="mailto:info@hertsshield.co.uk" data-reveal className="group bg-card border border-border rounded-lg p-10 hover:border-brand transition-colors flex items-start gap-5">
-          <div className="h-14 w-14 rounded-md bg-brand flex items-center justify-center shrink-0">
-            <Mail className="h-7 w-7 text-white" />
+        <a href="mailto:info@hertsshield.co.uk" data-reveal className="group bg-card border border-border rounded-lg p-8 hover:border-brand transition-colors flex items-start gap-4">
+          <div className="h-12 w-12 rounded-md bg-brand flex items-center justify-center shrink-0">
+            <Mail className="h-6 w-6 text-white" />
           </div>
           <div className="min-w-0">
-            <div className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Email Us</div>
-            <div className="text-2xl sm:text-3xl font-bold group-hover:text-brand transition-colors break-all">info@hertsshield.co.uk</div>
-            <div className="text-sm text-muted-foreground mt-2">We respond within 24 hours</div>
+            <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Email Us</div>
+            <div className="text-xl sm:text-2xl font-bold group-hover:text-brand transition-colors break-all">info@hertsshield.co.uk</div>
+            <div className="text-sm text-muted-foreground mt-1">We respond within 24 hours</div>
           </div>
         </a>
       </div>
