@@ -415,7 +415,7 @@ function Contact() {
           </div>
           <div className="min-w-0">
             <div className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Email Us</div>
-            <div className="text-2xl sm:text-3xl font-bold group-hover:text-brand transition-colors break-all">info@hertssec.co.uk</div>
+            <div className="text-2xl sm:text-3xl font-bold group-hover:text-brand transition-colors break-all">info@hertsshield.co.uk</div>
             <div className="text-sm text-muted-foreground mt-2">We respond within 24 hours</div>
           </div>
         </a>
@@ -429,9 +429,9 @@ function Footer() {
     <footer className="bg-card border-t border-border">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
-          <img src={logoAsset.url} alt="HertsSec Security Services" className="h-14 w-auto mb-5" />
+          <img src={logoAsset.url} alt="HertsShield Security Services" className="h-14 w-auto mb-5" />
           <p className="text-sm text-muted-foreground max-w-sm">
-            HertsSec Security Services — Professional security across Hertfordshire. SIA-licensed manned guarding, event security and mobile patrols.
+            HertsShield Security Services — Professional security across Hertfordshire. SIA-licensed manned guarding, event security and mobile patrols.
           </p>
           <div className="flex gap-3 mt-6">
             {[Facebook, Instagram, Linkedin].map((Icon, i) => (
@@ -453,14 +453,14 @@ function Footer() {
           <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-4">Contact</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-brand mt-0.5 shrink-0" /> 07XXX XXX XXX</li>
-            <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-brand mt-0.5 shrink-0" /> info@hertssec.co.uk</li>
+            <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-brand mt-0.5 shrink-0" /> info@hertsshield.co.uk</li>
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> Hertfordshire, United Kingdom</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} HertsSec Security Services. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} HertsShield Security Services. All rights reserved.</div>
           <div>SIA Licensed · Fully Insured · Hertfordshire</div>
         </div>
       </div>
