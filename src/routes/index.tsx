@@ -147,31 +147,31 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="home" className="relative min-h-[92vh] flex items-center overflow-hidden">
+    <section id="home" className="relative min-h-[78vh] flex items-center overflow-hidden">
       <img src={heroImage} alt="Professional security officer outside modern office" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 hero-overlay" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-transparent" />
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full pt-64 sm:pt-56 pb-20">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full pt-52 sm:pt-44 pb-16">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur px-4 py-1.5 mb-6">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur px-4 py-1.5 mb-5">
             <ShieldCheck className="h-4 w-4 text-brand" />
             <span className="text-xs font-semibold uppercase tracking-widest text-white/90">SIA Licensed · Hertfordshire</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] uppercase">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] uppercase">
             Professional Security Services Across <span className="text-brand">Hertfordshire</span>
           </h1>
-          <p className="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl">
+          <p className="mt-5 text-base sm:text-lg text-white/80 max-w-2xl">
             Reliable, professional and SIA-licensed security personnel protecting businesses, events and private clients across Hertfordshire.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Button asChild size="lg" className="bg-brand hover:bg-brand/90 text-white h-14 px-8 text-base font-semibold uppercase tracking-wide shadow-[0_20px_50px_-15px_rgba(179,0,0,0.6)]">
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Button asChild size="lg" className="bg-brand hover:bg-brand/90 text-white h-12 px-7 text-base font-semibold uppercase tracking-wide shadow-[0_20px_50px_-15px_rgba(179,0,0,0.6)]">
               <a href="#quote">Get a Free Quote</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="h-14 px-8 text-base font-semibold uppercase tracking-wide bg-white/5 border-white/30 text-white hover:bg-white hover:text-background">
+            <Button asChild size="lg" variant="outline" className="h-12 px-7 text-base font-semibold uppercase tracking-wide bg-white/5 border-white/30 text-white hover:bg-white hover:text-background">
               <a href="#services">Our Services</a>
             </Button>
           </div>
-          <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-white/70">
+          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm text-white/70">
             <span className="flex items-center gap-2"><Check className="h-4 w-4 text-brand" /> 24/7 Coverage</span>
             <span className="flex items-center gap-2"><Check className="h-4 w-4 text-brand" /> Locally Based</span>
             <span className="flex items-center gap-2"><Check className="h-4 w-4 text-brand" /> Fully Insured</span>
