@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
   KeyRound, UserSquare2, Car, Lock, Phone, Mail, MapPin, Menu, X, Check,
-  Award, Clock, PoundSterling, Facebook, Instagram, Linkedin,
+  Award, Clock, PoundSterling, Facebook, Instagram, Linkedin, FileCheck,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
