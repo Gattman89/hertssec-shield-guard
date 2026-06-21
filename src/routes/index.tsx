@@ -272,7 +272,7 @@ function Services() {
 
 function WhyUs() {
   return (
-    <section className="py-24 sm:py-32 bg-background relative overflow-hidden">
+    <section className="py-16 sm:py-20 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-brand/5 to-transparent" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
@@ -280,18 +280,18 @@ function WhyUs() {
           title="The HertsShield Standard"
           desc="Built on professionalism, local knowledge and genuine accountability."
         />
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-lg overflow-hidden border border-border">
+        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-lg overflow-hidden border border-border">
           {reasons.map((r) => (
-            <div key={r.title} data-reveal className="bg-background p-8 flex items-start gap-5 hover:bg-card transition-colors">
-              <div className="shrink-0 h-12 w-12 rounded-md bg-brand flex items-center justify-center">
-                <r.icon className="h-6 w-6 text-white" />
+            <div key={r.title} data-reveal className="bg-background p-6 flex items-start gap-4 hover:bg-card transition-colors">
+              <div className="shrink-0 h-10 w-10 rounded-md bg-brand flex items-center justify-center">
+                <r.icon className="h-5 w-5 text-white" />
               </div>
               <div className="min-w-0">
                 <div className="flex items-center gap-2 mb-1">
-                  <Check className="h-4 w-4 text-brand" />
+                  <Check className="h-3.5 w-3.5 text-brand" />
                   <span className="text-xs uppercase tracking-widest text-muted-foreground">Standard</span>
                 </div>
-                <h3 className="text-lg font-bold uppercase">{r.title}</h3>
+                <h3 className="text-base font-bold uppercase">{r.title}</h3>
               </div>
             </div>
           ))}
