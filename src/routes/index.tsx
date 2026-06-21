@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import logoAsset from "@/assets/hertssec-logo-cropped.png.asset.json";
+import logoAsset from "@/assets/hertsshield-logo-cropped.png.asset.json";
 import heroImage from "@/assets/hero-security.jpg";
 import { useEffect, useRef, useState } from "react";
 import {
@@ -16,9 +16,9 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "HertsSec Security Services | Hertfordshire Security Company" },
+      { title: "HertsShield Security Services | Hertfordshire Security Company" },
       { name: "description", content: "Hertfordshire security company providing SIA-licensed manned guarding, event security, construction site security and mobile patrols across Hertfordshire." },
-      { property: "og:title", content: "HertsSec Security Services | Hertfordshire Security Company" },
+      { property: "og:title", content: "HertsShield Security Services | Hertfordshire Security Company" },
       { property: "og:description", content: "SIA-licensed manned guarding, event security and construction site security across Hertfordshire." },
       { name: "keywords", content: "Hertfordshire security company, manned guarding Hertfordshire, event security Hertfordshire, construction site security Hertfordshire, SIA licensed security" },
     ],
@@ -101,7 +101,7 @@ function Header() {
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-3 sm:py-5 flex justify-center">
           <img
             src={logoAsset.url}
-            alt="HertsSec Security Services"
+            alt="HertsShield Security Services"
             className={`w-auto transition-all duration-300 ${scrolled ? "h-24 sm:h-28" : "h-36 sm:h-44 lg:h-52"}`}
           />
         </div>
@@ -198,7 +198,7 @@ function About() {
         <div>
           <SectionHeader eyebrow="About Us" title="Hertfordshire's Trusted Security Partner" />
           <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed" data-reveal>
-            HertsSec Security Services is a Hertfordshire-based security company providing professional manned security solutions across Hertfordshire and surrounding areas. We deliver reliable security services for businesses, events and private clients, focusing on professionalism, visibility and customer service.
+            HertsShield Security Services is a Hertfordshire-based security company providing professional manned security solutions across Hertfordshire and surrounding areas. We deliver reliable security services for businesses, events and private clients, focusing on professionalism, visibility and customer service.
           </p>
           <div className="mt-10 grid grid-cols-3 gap-6" data-reveal>
             {[
@@ -216,7 +216,7 @@ function About() {
         <div className="relative" data-reveal>
           <div className="absolute -inset-4 bg-gradient-to-br from-brand/30 to-transparent blur-2xl" />
           <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-border" style={{ boxShadow: "var(--shadow-card)" }}>
-            <img src={heroImage} alt="HertsSec security officer on duty" className="w-full h-full object-cover" loading="lazy" width={800} height={1000} />
+            <img src={heroImage} alt="HertsShield security officer on duty" className="w-full h-full object-cover" loading="lazy" width={800} height={1000} />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6">
               <div className="flex items-center gap-3 text-white">
@@ -273,7 +273,7 @@ function WhyUs() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Why Choose Us"
-          title="The HertsSec Standard"
+          title="The HertsShield Standard"
           desc="Built on professionalism, local knowledge and genuine accountability."
         />
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-lg overflow-hidden border border-border">
@@ -409,13 +409,13 @@ function Contact() {
             <div className="text-sm text-muted-foreground mt-2">24/7 enquiries — speak to a real person</div>
           </div>
         </a>
-        <a href="mailto:info@hertssec.co.uk" data-reveal className="group bg-card border border-border rounded-lg p-10 hover:border-brand transition-colors flex items-start gap-5">
+        <a href="mailto:info@hertsshield.co.uk" data-reveal className="group bg-card border border-border rounded-lg p-10 hover:border-brand transition-colors flex items-start gap-5">
           <div className="h-14 w-14 rounded-md bg-brand flex items-center justify-center shrink-0">
             <Mail className="h-7 w-7 text-white" />
           </div>
           <div className="min-w-0">
             <div className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Email Us</div>
-            <div className="text-2xl sm:text-3xl font-bold group-hover:text-brand transition-colors break-all">info@hertssec.co.uk</div>
+            <div className="text-2xl sm:text-3xl font-bold group-hover:text-brand transition-colors break-all">info@hertsshield.co.uk</div>
             <div className="text-sm text-muted-foreground mt-2">We respond within 24 hours</div>
           </div>
         </a>
@@ -429,9 +429,9 @@ function Footer() {
     <footer className="bg-card border-t border-border">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-4 gap-10">
         <div className="md:col-span-2">
-          <img src={logoAsset.url} alt="HertsSec Security Services" className="h-14 w-auto mb-5" />
+          <img src={logoAsset.url} alt="HertsShield Security Services" className="h-14 w-auto mb-5" />
           <p className="text-sm text-muted-foreground max-w-sm">
-            HertsSec Security Services — Professional security across Hertfordshire. SIA-licensed manned guarding, event security and mobile patrols.
+            HertsShield Security Services — Professional security across Hertfordshire. SIA-licensed manned guarding, event security and mobile patrols.
           </p>
           <div className="flex gap-3 mt-6">
             {[Facebook, Instagram, Linkedin].map((Icon, i) => (
@@ -453,14 +453,14 @@ function Footer() {
           <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-4">Contact</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-brand mt-0.5 shrink-0" /> 07XXX XXX XXX</li>
-            <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-brand mt-0.5 shrink-0" /> info@hertssec.co.uk</li>
+            <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-brand mt-0.5 shrink-0" /> info@hertsshield.co.uk</li>
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> Hertfordshire, United Kingdom</li>
           </ul>
         </div>
       </div>
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-muted-foreground">
-          <div>© {new Date().getFullYear()} HertsSec Security Services. All rights reserved.</div>
+          <div>© {new Date().getFullYear()} HertsShield Security Services. All rights reserved.</div>
           <div>SIA Licensed · Fully Insured · Hertfordshire</div>
         </div>
       </div>
