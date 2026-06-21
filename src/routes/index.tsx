@@ -41,6 +41,7 @@ const services = [
 
 const reasons = [
   { icon: Award, title: "SIA Licensed Personnel" },
+  { icon: FileCheck, title: "Enhanced DBS Checked" },
   { icon: ShieldCheck, title: "Professional and Reliable Service" },
   { icon: MapPin, title: "Local Hertfordshire-Based Company" },
   { icon: Lock, title: "Flexible Security Solutions" },
