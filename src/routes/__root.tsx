@@ -1,5 +1,4 @@
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { WhatsAppBubble } from "@/components/WhatsAppBubble";
 import {
   Outlet,
   Link,
