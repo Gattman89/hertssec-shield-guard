@@ -240,7 +240,7 @@ function About() {
 
 function Services() {
   return (
-    <section id="services" className="py-24 sm:py-32 bg-card relative">
+    <section id="services" className="py-16 sm:py-20 bg-card relative">
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "24px 24px" }} />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
@@ -248,19 +248,19 @@ function Services() {
           title="Complete Security Solutions"
           desc="From manned guarding to mobile patrols, we deliver end-to-end security services tailored to Hertfordshire businesses, sites and events."
         />
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3">
           {services.map((s, i) => (
             <div
               key={s.title}
               data-reveal
               style={{ animationDelay: `${i * 50}ms` }}
-              className="group relative bg-background border border-border rounded-lg p-6 hover:border-brand transition-all duration-300 overflow-hidden"
+              className="group relative bg-background border border-border rounded-lg p-5 hover:border-brand transition-all duration-300 overflow-hidden"
             >
               <div className="absolute top-0 left-0 h-1 w-0 bg-brand group-hover:w-full transition-all duration-500" />
-              <div className="h-12 w-12 rounded-md bg-brand/10 border border-brand/30 flex items-center justify-center mb-5 group-hover:bg-brand group-hover:border-brand transition-colors">
-                <s.icon className="h-6 w-6 text-brand group-hover:text-white transition-colors" />
+              <div className="h-10 w-10 rounded-md bg-brand/10 border border-brand/30 flex items-center justify-center mb-4 group-hover:bg-brand group-hover:border-brand transition-colors">
+                <s.icon className="h-5 w-5 text-brand group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-lg font-bold uppercase tracking-tight mb-2">{s.title}</h3>
+              <h3 className="text-base font-bold uppercase tracking-tight mb-1">{s.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
             </div>
           ))}
