@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import logoAsset from "@/assets/hertsshield-logo-cropped.png.asset.json";
-import heroImage from "@/assets/hero-security.jpg";
+import heroAsset from "@/assets/hero-security.jpg.asset.json";
+const heroImage = heroAsset.url;
 import { useEffect, useRef, useState } from "react";
 import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
