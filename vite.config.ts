@@ -6,16 +6,16 @@
 // You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
+// Outside Lovable, only force-on Nitro when the host is known (e.g. Vercel sets VERCEL=1).
+// Nitro's zero-config auto-detection then picks the correct preset (vercel, netlify, etc.).
+// Leaving `nitro` undefined inside Lovable preserves the default Lovable build behavior.
+const isExternalDeploy = !!process.env.VERCEL || !!process.env.NETLIFY || !!process.env.NITRO_PRESET;
+
 export default defineConfig({
   tanstackStart: {
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
   },
-  // When deployed outside Lovable (e.g. on Vercel), force the Nitro preset to "vercel".
-  // Inside a Lovable build the preset is always forced to Cloudflare, so this only
-  // affects builds run from your own CI / Vercel.
-  nitro: {
-    preset: "vercel",
-  },
+  ...(isExternalDeploy ? { nitro: true as const } : {}),
 });
