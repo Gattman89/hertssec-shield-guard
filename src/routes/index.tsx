@@ -6,6 +6,7 @@ import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
   KeyRound, UserSquare2, Car, Lock, Phone, Mail, MapPin, Menu, X, Check,
   Award, Clock, PoundSterling, Facebook, Instagram, Linkedin, FileCheck,
+  HeartPulse, Users,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -42,6 +43,8 @@ const services = [
 const reasons = [
   { icon: Award, title: "SIA Licensed Personnel" },
   { icon: FileCheck, title: "Enhanced DBS Checked" },
+  { icon: HeartPulse, title: "First Aid & ACT Trained" },
+  { icon: Users, title: "Led by 20+ Years Industry Experience" },
   { icon: ShieldCheck, title: "Professional and Reliable Service" },
   { icon: MapPin, title: "Local Hertfordshire-Based Company" },
   { icon: Lock, title: "Flexible Security Solutions" },
@@ -144,31 +147,31 @@ function Header() {
 
 function Hero() {
   return (
-    <section id="home" className="relative min-h-[92vh] flex items-center overflow-hidden">
+    <section id="home" className="relative min-h-[78vh] flex items-center overflow-hidden">
       <img src={heroImage} alt="Professional security officer outside modern office" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
       <div className="absolute inset-0 hero-overlay" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-transparent" />
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full pt-64 sm:pt-56 pb-20">
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full pt-52 sm:pt-44 pb-16">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur px-4 py-1.5 mb-6">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur px-4 py-1.5 mb-5">
             <ShieldCheck className="h-4 w-4 text-brand" />
             <span className="text-xs font-semibold uppercase tracking-widest text-white/90">SIA Licensed · Hertfordshire</span>
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white leading-[1.05] uppercase">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] uppercase">
             Professional Security Services Across <span className="text-brand">Hertfordshire</span>
           </h1>
-          <p className="mt-6 text-lg sm:text-xl text-white/80 max-w-2xl">
+          <p className="mt-5 text-base sm:text-lg text-white/80 max-w-2xl">
             Reliable, professional and SIA-licensed security personnel protecting businesses, events and private clients across Hertfordshire.
           </p>
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Button asChild size="lg" className="bg-brand hover:bg-brand/90 text-white h-14 px-8 text-base font-semibold uppercase tracking-wide shadow-[0_20px_50px_-15px_rgba(179,0,0,0.6)]">
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Button asChild size="lg" className="bg-brand hover:bg-brand/90 text-white h-12 px-7 text-base font-semibold uppercase tracking-wide shadow-[0_20px_50px_-15px_rgba(179,0,0,0.6)]">
               <a href="#quote">Get a Free Quote</a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="h-14 px-8 text-base font-semibold uppercase tracking-wide bg-white/5 border-white/30 text-white hover:bg-white hover:text-background">
+            <Button asChild size="lg" variant="outline" className="h-12 px-7 text-base font-semibold uppercase tracking-wide bg-white/5 border-white/30 text-white hover:bg-white hover:text-background">
               <a href="#services">Our Services</a>
             </Button>
           </div>
-          <div className="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-sm text-white/70">
+          <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm text-white/70">
             <span className="flex items-center gap-2"><Check className="h-4 w-4 text-brand" /> 24/7 Coverage</span>
             <span className="flex items-center gap-2"><Check className="h-4 w-4 text-brand" /> Locally Based</span>
             <span className="flex items-center gap-2"><Check className="h-4 w-4 text-brand" /> Fully Insured</span>
@@ -194,21 +197,21 @@ function SectionHeader({ eyebrow, title, desc }: { eyebrow: string; title: strin
 
 function About() {
   return (
-    <section id="about" className="py-24 sm:py-32 bg-background">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <section id="about" className="py-16 sm:py-20 bg-background">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
         <div>
           <SectionHeader eyebrow="About Us" title="Hertfordshire's Trusted Security Partner" />
-          <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed" data-reveal>
+          <p className="mt-5 text-base sm:text-lg text-muted-foreground leading-relaxed" data-reveal>
             HertsShield Security Services is a Hertfordshire-based security company providing professional manned security solutions across Hertfordshire and surrounding areas. We deliver reliable security services for businesses, events and private clients, focusing on professionalism, visibility and customer service.
           </p>
-          <div className="mt-10 grid grid-cols-3 gap-6" data-reveal>
+          <div className="mt-8 grid grid-cols-3 gap-5" data-reveal>
             {[
-              { n: "10+", l: "Service Lines" },
+              { n: "20+", l: "Years Experience" },
               { n: "24/7", l: "Availability" },
               { n: "100%", l: "SIA Licensed" },
             ].map((s) => (
               <div key={s.l} className="border-l-2 border-brand pl-4">
-                <div className="text-3xl sm:text-4xl font-bold text-foreground">{s.n}</div>
+                <div className="text-2xl sm:text-3xl font-bold text-foreground">{s.n}</div>
                 <div className="text-xs uppercase tracking-wider text-muted-foreground mt-1">{s.l}</div>
               </div>
             ))}
@@ -216,14 +219,14 @@ function About() {
         </div>
         <div className="relative" data-reveal>
           <div className="absolute -inset-4 bg-gradient-to-br from-brand/30 to-transparent blur-2xl" />
-          <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-border" style={{ boxShadow: "var(--shadow-card)" }}>
-            <img src={heroImage} alt="HertsShield security officer on duty" className="w-full h-full object-cover" loading="lazy" width={800} height={1000} />
+          <div className="relative aspect-[4/3] rounded-lg overflow-hidden border border-border" style={{ boxShadow: "var(--shadow-card)" }}>
+            <img src={heroImage} alt="HertsShield security officer on duty" className="w-full h-full object-cover" loading="lazy" width={800} height={600} />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
-            <div className="absolute bottom-6 left-6 right-6">
+            <div className="absolute bottom-5 left-5 right-5">
               <div className="flex items-center gap-3 text-white">
-                <ShieldCheck className="h-8 w-8 text-brand" />
+                <ShieldCheck className="h-7 w-7 text-brand" />
                 <div>
-                  <div className="font-bold uppercase tracking-wide">SIA Approved</div>
+                  <div className="font-bold uppercase tracking-wide text-sm">SIA Approved</div>
                   <div className="text-xs text-white/70">Trained · Licensed · Vetted</div>
                 </div>
               </div>
@@ -237,7 +240,7 @@ function About() {
 
 function Services() {
   return (
-    <section id="services" className="py-24 sm:py-32 bg-card relative">
+    <section id="services" className="py-16 sm:py-20 bg-card relative">
       <div className="absolute inset-0 opacity-[0.03]" style={{ backgroundImage: "radial-gradient(circle at 1px 1px, white 1px, transparent 0)", backgroundSize: "24px 24px" }} />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
@@ -245,19 +248,19 @@ function Services() {
           title="Complete Security Solutions"
           desc="From manned guarding to mobile patrols, we deliver end-to-end security services tailored to Hertfordshire businesses, sites and events."
         />
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4">
+        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3">
           {services.map((s, i) => (
             <div
               key={s.title}
               data-reveal
               style={{ animationDelay: `${i * 50}ms` }}
-              className="group relative bg-background border border-border rounded-lg p-6 hover:border-brand transition-all duration-300 overflow-hidden"
+              className="group relative bg-background border border-border rounded-lg p-5 hover:border-brand transition-all duration-300 overflow-hidden"
             >
               <div className="absolute top-0 left-0 h-1 w-0 bg-brand group-hover:w-full transition-all duration-500" />
-              <div className="h-12 w-12 rounded-md bg-brand/10 border border-brand/30 flex items-center justify-center mb-5 group-hover:bg-brand group-hover:border-brand transition-colors">
-                <s.icon className="h-6 w-6 text-brand group-hover:text-white transition-colors" />
+              <div className="h-10 w-10 rounded-md bg-brand/10 border border-brand/30 flex items-center justify-center mb-4 group-hover:bg-brand group-hover:border-brand transition-colors">
+                <s.icon className="h-5 w-5 text-brand group-hover:text-white transition-colors" />
               </div>
-              <h3 className="text-lg font-bold uppercase tracking-tight mb-2">{s.title}</h3>
+              <h3 className="text-base font-bold uppercase tracking-tight mb-1">{s.title}</h3>
               <p className="text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
             </div>
           ))}
@@ -269,7 +272,7 @@ function Services() {
 
 function WhyUs() {
   return (
-    <section className="py-24 sm:py-32 bg-background relative overflow-hidden">
+    <section className="py-16 sm:py-20 bg-background relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-transparent via-brand/5 to-transparent" />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
@@ -277,18 +280,18 @@ function WhyUs() {
           title="The HertsShield Standard"
           desc="Built on professionalism, local knowledge and genuine accountability."
         />
-        <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-lg overflow-hidden border border-border">
+        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-lg overflow-hidden border border-border">
           {reasons.map((r) => (
-            <div key={r.title} data-reveal className="bg-background p-8 flex items-start gap-5 hover:bg-card transition-colors">
-              <div className="shrink-0 h-12 w-12 rounded-md bg-brand flex items-center justify-center">
-                <r.icon className="h-6 w-6 text-white" />
+            <div key={r.title} data-reveal className="bg-background p-6 flex items-start gap-4 hover:bg-card transition-colors">
+              <div className="shrink-0 h-10 w-10 rounded-md bg-brand flex items-center justify-center">
+                <r.icon className="h-5 w-5 text-white" />
               </div>
               <div className="min-w-0">
                 <div className="flex items-center gap-2 mb-1">
-                  <Check className="h-4 w-4 text-brand" />
+                  <Check className="h-3.5 w-3.5 text-brand" />
                   <span className="text-xs uppercase tracking-widest text-muted-foreground">Standard</span>
                 </div>
-                <h3 className="text-lg font-bold uppercase">{r.title}</h3>
+                <h3 className="text-base font-bold uppercase">{r.title}</h3>
               </div>
             </div>
           ))}
@@ -300,24 +303,24 @@ function WhyUs() {
 
 function Areas() {
   return (
-    <section id="areas" className="py-24 sm:py-32 bg-card">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <section id="areas" className="py-16 sm:py-20 bg-card">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
         <div>
           <SectionHeader
             eyebrow="Areas Covered"
             title="Across Hertfordshire"
             desc="We provide security services throughout Hertfordshire and surrounding villages. If you don't see your town listed, get in touch — we likely cover it."
           />
-          <ul className="mt-10 grid grid-cols-2 gap-3" data-reveal>
+          <ul className="mt-8 grid grid-cols-2 gap-2" data-reveal>
             {areas.map((a) => (
-              <li key={a} className="flex items-center gap-3 text-sm font-medium text-foreground/90">
+              <li key={a} className="flex items-center gap-2 text-sm font-medium text-foreground/90">
                 <MapPin className="h-4 w-4 text-brand shrink-0" />
                 {a}
               </li>
             ))}
           </ul>
         </div>
-        <div data-reveal className="relative aspect-square rounded-lg border border-border bg-background overflow-hidden" style={{ boxShadow: "var(--shadow-card)" }}>
+        <div data-reveal className="relative aspect-[4/3] rounded-lg border border-border bg-background overflow-hidden" style={{ boxShadow: "var(--shadow-card)" }}>
           <iframe
             title="Hertfordshire Coverage Map"
             src="https://www.openstreetmap.org/export/embed.html?bbox=-0.65%2C51.65%2C0.20%2C52.10&layer=mapnik&marker=51.8055%2C-0.2008"
@@ -325,9 +328,9 @@ function Areas() {
             loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-background/40 via-transparent to-brand/10 pointer-events-none" />
-          <div className="absolute bottom-4 left-4 right-4 bg-background/95 backdrop-blur border border-border rounded-md p-4 flex items-center gap-3">
-            <div className="h-10 w-10 rounded-md bg-brand flex items-center justify-center shrink-0">
-              <MapPin className="h-5 w-5 text-white" />
+          <div className="absolute bottom-3 left-3 right-3 bg-background/95 backdrop-blur border border-border rounded-md p-3 flex items-center gap-3">
+            <div className="h-9 w-9 rounded-md bg-brand flex items-center justify-center shrink-0">
+              <MapPin className="h-4 w-4 text-white" />
             </div>
             <div className="min-w-0">
               <div className="text-sm font-bold uppercase">Hertfordshire-wide coverage</div>
@@ -348,22 +351,22 @@ function Quote() {
     formRef.current?.reset();
   };
   return (
-    <section id="quote" className="py-24 sm:py-32 relative overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
+    <section id="quote" className="py-16 sm:py-20 relative overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
       <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 80% 20%, #B30000 0%, transparent 50%)" }} />
       <div className="relative mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="text-center" data-reveal>
-          <div className="flex items-center justify-center gap-3 mb-4">
+          <div className="flex items-center justify-center gap-3 mb-3">
             <div className="section-divider" />
             <span className="text-xs font-bold uppercase tracking-[0.25em] text-brand">Request a Quote</span>
             <div className="section-divider" />
           </div>
-          <h2 className="text-4xl sm:text-5xl font-bold uppercase leading-tight">Get Your Free Security Quote</h2>
-          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold uppercase leading-tight">Get Your Free Security Quote</h2>
+          <p className="mt-3 text-muted-foreground max-w-2xl mx-auto">
             Tell us about your requirements and we'll respond within 24 hours with a tailored, competitive quote.
           </p>
         </div>
-        <form ref={formRef} onSubmit={onSubmit} data-reveal className="mt-12 bg-card border border-border rounded-lg p-6 sm:p-10" style={{ boxShadow: "var(--shadow-card)" }}>
-          <div className="grid sm:grid-cols-2 gap-5">
+        <form ref={formRef} onSubmit={onSubmit} data-reveal className="mt-8 bg-card border border-border rounded-lg p-5 sm:p-8" style={{ boxShadow: "var(--shadow-card)" }}>
+          <div className="grid sm:grid-cols-2 gap-4">
             <Field label="Name" required><Input required name="name" /></Field>
             <Field label="Company Name"><Input name="company" /></Field>
             <Field label="Email" required><Input required type="email" name="email" /></Field>
@@ -373,10 +376,10 @@ function Quote() {
             <Field label="Date Required"><Input type="date" name="date" /></Field>
             <Field label="Duration"><Input name="duration" placeholder="e.g. 3 months / one-off" /></Field>
             <div className="sm:col-span-2">
-              <Field label="Message"><Textarea name="message" rows={5} placeholder="Tell us more about your security needs..." /></Field>
+              <Field label="Message"><Textarea name="message" rows={4} placeholder="Tell us more about your security needs..." /></Field>
             </div>
           </div>
-          <Button type="submit" size="lg" className="mt-8 w-full bg-brand hover:bg-brand/90 text-white h-14 text-base font-semibold uppercase tracking-wide">
+          <Button type="submit" size="lg" className="mt-6 w-full bg-brand hover:bg-brand/90 text-white h-12 text-base font-semibold uppercase tracking-wide">
             Request Quote
           </Button>
         </form>
@@ -398,26 +401,26 @@ function Field({ label, required, children }: { label: string; required?: boolea
 
 function Contact() {
   return (
-    <section id="contact" className="py-24 sm:py-32 bg-background">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-6">
-        <a href="tel:07000000000" data-reveal className="group bg-card border border-border rounded-lg p-10 hover:border-brand transition-colors flex items-start gap-5">
-          <div className="h-14 w-14 rounded-md bg-brand flex items-center justify-center shrink-0">
-            <Phone className="h-7 w-7 text-white" />
+    <section id="contact" className="py-16 sm:py-20 bg-background">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-4">
+        <a href="tel:07000000000" data-reveal className="group bg-card border border-border rounded-lg p-8 hover:border-brand transition-colors flex items-start gap-4">
+          <div className="h-12 w-12 rounded-md bg-brand flex items-center justify-center shrink-0">
+            <Phone className="h-6 w-6 text-white" />
           </div>
           <div className="min-w-0">
-            <div className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Call Us</div>
-            <div className="text-2xl sm:text-3xl font-bold group-hover:text-brand transition-colors">07XXX XXX XXX</div>
-            <div className="text-sm text-muted-foreground mt-2">24/7 enquiries — speak to a real person</div>
+            <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Call Us</div>
+            <div className="text-xl sm:text-2xl font-bold group-hover:text-brand transition-colors">07XXX XXX XXX</div>
+            <div className="text-sm text-muted-foreground mt-1">24/7 enquiries — speak to a real person</div>
           </div>
         </a>
-        <a href="mailto:info@hertsshield.co.uk" data-reveal className="group bg-card border border-border rounded-lg p-10 hover:border-brand transition-colors flex items-start gap-5">
-          <div className="h-14 w-14 rounded-md bg-brand flex items-center justify-center shrink-0">
-            <Mail className="h-7 w-7 text-white" />
+        <a href="mailto:info@hertsshield.co.uk" data-reveal className="group bg-card border border-border rounded-lg p-8 hover:border-brand transition-colors flex items-start gap-4">
+          <div className="h-12 w-12 rounded-md bg-brand flex items-center justify-center shrink-0">
+            <Mail className="h-6 w-6 text-white" />
           </div>
           <div className="min-w-0">
-            <div className="text-xs uppercase tracking-widest text-muted-foreground mb-2">Email Us</div>
-            <div className="text-2xl sm:text-3xl font-bold group-hover:text-brand transition-colors break-all">info@hertsshield.co.uk</div>
-            <div className="text-sm text-muted-foreground mt-2">We respond within 24 hours</div>
+            <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Email Us</div>
+            <div className="text-xl sm:text-2xl font-bold group-hover:text-brand transition-colors break-all">info@hertsshield.co.uk</div>
+            <div className="text-sm text-muted-foreground mt-1">We respond within 24 hours</div>
           </div>
         </a>
       </div>
@@ -428,22 +431,22 @@ function Contact() {
 function Footer() {
   return (
     <footer className="bg-card border-t border-border">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-4 gap-10">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-4 gap-8">
         <div className="md:col-span-2">
-          <img src={logoAsset.url} alt="HertsShield Security Services" className="h-14 w-auto mb-5" />
+          <img src={logoAsset.url} alt="HertsShield Security Services" className="h-12 w-auto mb-4" />
           <p className="text-sm text-muted-foreground max-w-sm">
             HertsShield Security Services — Professional security across Hertfordshire. SIA-licensed manned guarding, event security and mobile patrols.
           </p>
-          <div className="flex gap-3 mt-6">
+          <div className="flex gap-3 mt-5">
             {[Facebook, Instagram, Linkedin].map((Icon, i) => (
-              <a key={i} href="#" aria-label="Social" className="h-10 w-10 rounded-md border border-border flex items-center justify-center hover:bg-brand hover:border-brand hover:text-white transition-colors">
+              <a key={i} href="#" aria-label="Social" className="h-9 w-9 rounded-md border border-border flex items-center justify-center hover:bg-brand hover:border-brand hover:text-white transition-colors">
                 <Icon className="h-4 w-4" />
               </a>
             ))}
           </div>
         </div>
         <div>
-          <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-4">Quick Links</h4>
+          <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-3">Quick Links</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             {navLinks.map((l) => (
               <li key={l.href}><a href={l.href} className="hover:text-brand transition-colors">{l.label}</a></li>
@@ -451,8 +454,8 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-4">Contact</h4>
-          <ul className="space-y-3 text-sm text-muted-foreground">
+          <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-3">Contact</h4>
+          <ul className="space-y-2 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-brand mt-0.5 shrink-0" /> 07XXX XXX XXX</li>
             <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-brand mt-0.5 shrink-0" /> info@hertsshield.co.uk</li>
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> Hertfordshire, United Kingdom</li>
@@ -460,7 +463,7 @@ function Footer() {
         </div>
       </div>
       <div className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-muted-foreground">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-muted-foreground">
           <div>© {new Date().getFullYear()} HertsShield Security Services. All rights reserved.</div>
           <div>SIA Licensed · Fully Insured · Hertfordshire</div>
         </div>
