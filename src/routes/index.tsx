@@ -5,7 +5,7 @@ const heroImage = heroAsset.url;
 import { useEffect, useRef, useState } from "react";
 import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
-  KeyRound, UserSquare2, Car, Lock, Phone, Mail, MapPin, Menu, X, Check,
+  KeyRound, UserSquare2, Lock, Phone, MapPin, Menu, X, Check,
   Award, Clock, PoundSterling, Facebook, Instagram, Linkedin, FileCheck,
   HeartPulse, Users,
 } from "lucide-react";
@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "HertsShield Security Services | Hertfordshire Security Company" },
-      { name: "description", content: "Hertfordshire security company providing SIA-licensed manned guarding, event security, construction site security and mobile patrols across Hertfordshire." },
+      { name: "description", content: "Hertfordshire security company providing SIA-licensed manned guarding, event security and construction site security across Hertfordshire." },
       { property: "og:title", content: "HertsShield Security Services | Hertfordshire Security Company" },
       { property: "og:description", content: "SIA-licensed manned guarding, event security and construction site security across Hertfordshire." },
       { name: "keywords", content: "Hertfordshire security company, manned guarding Hertfordshire, event security Hertfordshire, construction site security Hertfordshire, SIA licensed security" },
@@ -39,7 +39,6 @@ const services = [
   { icon: Shield, title: "Static Guarding", desc: "Dedicated officers stationed at fixed posts to deter and respond." },
   { icon: KeyRound, title: "Lock & Unlock Services", desc: "Reliable opening and closing of premises with full key-holding." },
   { icon: UserSquare2, title: "Reception & Concierge", desc: "Front-of-house security delivered with first-class customer service." },
-  { icon: Car, title: "Mobile Patrols", desc: "Marked vehicle patrols and random checks for round-the-clock coverage." },
 ];
 
 const reasons = [
@@ -248,7 +247,7 @@ function Services() {
         <SectionHeader
           eyebrow="Our Services"
           title="Complete Security Solutions"
-          desc="From manned guarding to mobile patrols, we deliver end-to-end security services tailored to Hertfordshire businesses, sites and events."
+          desc="We deliver end-to-end security services tailored to Hertfordshire businesses, sites and events."
         />
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-3">
           {services.map((s, i) => (
@@ -411,18 +410,8 @@ function Contact() {
           </div>
           <div className="min-w-0">
             <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Call Us</div>
-            <div className="text-xl sm:text-2xl font-bold group-hover:text-brand transition-colors">07XXX XXX XXX</div>
+            <div className="text-xl sm:text-2xl font-bold group-hover:text-brand transition-colors">07710430032</div>
             <div className="text-sm text-muted-foreground mt-1">24/7 enquiries — speak to a real person</div>
-          </div>
-        </a>
-        <a href="mailto:info@hertsshield.co.uk" data-reveal className="group bg-card border border-border rounded-lg p-8 hover:border-brand transition-colors flex items-start gap-4">
-          <div className="h-12 w-12 rounded-md bg-brand flex items-center justify-center shrink-0">
-            <Mail className="h-6 w-6 text-white" />
-          </div>
-          <div className="min-w-0">
-            <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Email Us</div>
-            <div className="text-xl sm:text-2xl font-bold group-hover:text-brand transition-colors break-all">info@hertsshield.co.uk</div>
-            <div className="text-sm text-muted-foreground mt-1">We respond within 24 hours</div>
           </div>
         </a>
       </div>
@@ -437,7 +426,7 @@ function Footer() {
         <div className="md:col-span-2">
           <img src={logoAsset.url} alt="HertsShield Security Services" className="h-12 w-auto mb-4" />
           <p className="text-sm text-muted-foreground max-w-sm">
-            HertsShield Security Services — Professional security across Hertfordshire. SIA-licensed manned guarding, event security and mobile patrols.
+            HertsShield Security Services — Professional security across Hertfordshire. SIA-licensed manned guarding and event security.
           </p>
           <div className="flex gap-3 mt-5">
             {[Facebook, Instagram, Linkedin].map((Icon, i) => (
@@ -458,8 +447,7 @@ function Footer() {
         <div>
           <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-3">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-brand mt-0.5 shrink-0" /> 07XXX XXX XXX</li>
-            <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-brand mt-0.5 shrink-0" /> info@hertsshield.co.uk</li>
+            <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-brand mt-0.5 shrink-0" /> 07710430032</li>
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> Hertfordshire, United Kingdom</li>
           </ul>
         </div>
