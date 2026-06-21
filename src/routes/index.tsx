@@ -101,7 +101,7 @@ function Header() {
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-3 sm:py-5 flex justify-center">
           <img
             src={logoAsset.url}
-            alt="HertsSec Security Services"
+            alt="HertsShield Security Services"
             className={`w-auto transition-all duration-300 ${scrolled ? "h-24 sm:h-28" : "h-36 sm:h-44 lg:h-52"}`}
           />
         </div>
@@ -198,7 +198,7 @@ function About() {
         <div>
           <SectionHeader eyebrow="About Us" title="Hertfordshire's Trusted Security Partner" />
           <p className="mt-6 text-base sm:text-lg text-muted-foreground leading-relaxed" data-reveal>
-            HertsSec Security Services is a Hertfordshire-based security company providing professional manned security solutions across Hertfordshire and surrounding areas. We deliver reliable security services for businesses, events and private clients, focusing on professionalism, visibility and customer service.
+            HertsShield Security Services is a Hertfordshire-based security company providing professional manned security solutions across Hertfordshire and surrounding areas. We deliver reliable security services for businesses, events and private clients, focusing on professionalism, visibility and customer service.
           </p>
           <div className="mt-10 grid grid-cols-3 gap-6" data-reveal>
             {[
@@ -216,7 +216,7 @@ function About() {
         <div className="relative" data-reveal>
           <div className="absolute -inset-4 bg-gradient-to-br from-brand/30 to-transparent blur-2xl" />
           <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-border" style={{ boxShadow: "var(--shadow-card)" }}>
-            <img src={heroImage} alt="HertsSec security officer on duty" className="w-full h-full object-cover" loading="lazy" width={800} height={1000} />
+            <img src={heroImage} alt="HertsShield security officer on duty" className="w-full h-full object-cover" loading="lazy" width={800} height={1000} />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6">
               <div className="flex items-center gap-3 text-white">
@@ -273,7 +273,7 @@ function WhyUs() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Why Choose Us"
-          title="The HertsSec Standard"
+          title="The HertsShield Standard"
           desc="Built on professionalism, local knowledge and genuine accountability."
         />
         <div className="mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-lg overflow-hidden border border-border">
@@ -409,7 +409,7 @@ function Contact() {
             <div className="text-sm text-muted-foreground mt-2">24/7 enquiries — speak to a real person</div>
           </div>
         </a>
-        <a href="mailto:info@hertssec.co.uk" data-reveal className="group bg-card border border-border rounded-lg p-10 hover:border-brand transition-colors flex items-start gap-5">
+        <a href="mailto:info@hertsshield.co.uk" data-reveal className="group bg-card border border-border rounded-lg p-10 hover:border-brand transition-colors flex items-start gap-5">
           <div className="h-14 w-14 rounded-md bg-brand flex items-center justify-center shrink-0">
             <Mail className="h-7 w-7 text-white" />
           </div>
