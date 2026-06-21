@@ -404,7 +404,7 @@ function Contact() {
   return (
     <section id="contact" className="py-16 sm:py-20 bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-4">
-        <a href="tel:07000000000" data-reveal className="group bg-card border border-border rounded-lg p-8 hover:border-brand transition-colors flex items-start gap-4">
+        <a href="tel:07710430032" data-reveal className="group bg-card border border-border rounded-lg p-8 hover:border-brand transition-colors flex items-start gap-4">
           <div className="h-12 w-12 rounded-md bg-brand flex items-center justify-center shrink-0">
             <Phone className="h-6 w-6 text-white" />
           </div>
