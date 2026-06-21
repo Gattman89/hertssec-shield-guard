@@ -431,22 +431,22 @@ function Contact() {
 function Footer() {
   return (
     <footer className="bg-card border-t border-border">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-4 gap-10">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-4 gap-8">
         <div className="md:col-span-2">
-          <img src={logoAsset.url} alt="HertsShield Security Services" className="h-14 w-auto mb-5" />
+          <img src={logoAsset.url} alt="HertsShield Security Services" className="h-12 w-auto mb-4" />
           <p className="text-sm text-muted-foreground max-w-sm">
             HertsShield Security Services — Professional security across Hertfordshire. SIA-licensed manned guarding, event security and mobile patrols.
           </p>
-          <div className="flex gap-3 mt-6">
+          <div className="flex gap-3 mt-5">
             {[Facebook, Instagram, Linkedin].map((Icon, i) => (
-              <a key={i} href="#" aria-label="Social" className="h-10 w-10 rounded-md border border-border flex items-center justify-center hover:bg-brand hover:border-brand hover:text-white transition-colors">
+              <a key={i} href="#" aria-label="Social" className="h-9 w-9 rounded-md border border-border flex items-center justify-center hover:bg-brand hover:border-brand hover:text-white transition-colors">
                 <Icon className="h-4 w-4" />
               </a>
             ))}
           </div>
         </div>
         <div>
-          <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-4">Quick Links</h4>
+          <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-3">Quick Links</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             {navLinks.map((l) => (
               <li key={l.href}><a href={l.href} className="hover:text-brand transition-colors">{l.label}</a></li>
@@ -454,8 +454,8 @@ function Footer() {
           </ul>
         </div>
         <div>
-          <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-4">Contact</h4>
-          <ul className="space-y-3 text-sm text-muted-foreground">
+          <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-3">Contact</h4>
+          <ul className="space-y-2 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-brand mt-0.5 shrink-0" /> 07XXX XXX XXX</li>
             <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-brand mt-0.5 shrink-0" /> info@hertsshield.co.uk</li>
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> Hertfordshire, United Kingdom</li>
@@ -463,7 +463,7 @@ function Footer() {
         </div>
       </div>
       <div className="border-t border-border">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row justify-between gap-2 text-xs text-muted-foreground">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-muted-foreground">
           <div>© {new Date().getFullYear()} HertsShield Security Services. All rights reserved.</div>
           <div>SIA Licensed · Fully Insured · Hertfordshire</div>
         </div>
