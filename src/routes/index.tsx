@@ -93,24 +93,33 @@ function Header() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-background/95 backdrop-blur border-b border-border" : "bg-gradient-to-b from-black/70 to-transparent"
+        scrolled ? "bg-background/95 backdrop-blur border-b border-border" : "bg-background/85 backdrop-blur-sm border-b border-white/10"
       }`}
     >
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
-        <a href="#home" className="flex items-center gap-3 shrink-0">
-          <img src={logoAsset.url} alt="HertsSec Security Services" className="h-16 sm:h-20 w-auto" />
-        </a>
-        <nav className="hidden lg:flex items-center gap-8">
+      {/* Full-width logo banner */}
+      <a href="#home" className="block w-full bg-background border-b border-white/5">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex justify-center">
+          <img
+            src={logoAsset.url}
+            alt="HertsSec Security Services"
+            className={`w-auto transition-all duration-300 ${scrolled ? "h-14 sm:h-16" : "h-20 sm:h-28 lg:h-32"}`}
+          />
+        </div>
+      </a>
+      {/* Nav row */}
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-14">
+        <nav className="hidden lg:flex items-center gap-8 mx-auto">
           {navLinks.map((l) => (
             <a key={l.href} href={l.href} className="text-sm font-semibold text-foreground/85 hover:text-brand transition-colors uppercase tracking-wide">
               {l.label}
             </a>
           ))}
-          <Button asChild size="lg" className="bg-brand hover:bg-brand/90 text-white font-semibold uppercase tracking-wide">
+          <Button asChild size="lg" className="bg-brand hover:bg-brand/90 text-white font-semibold uppercase tracking-wide ml-4">
             <a href="#quote">Request a Quote</a>
           </Button>
         </nav>
-        <button className="lg:hidden text-foreground p-2" onClick={() => setOpen(!open)} aria-label="Toggle menu">
+        <div className="lg:hidden ml-auto" />
+        <button className="lg:hidden text-foreground p-2 ml-auto" onClick={() => setOpen(!open)} aria-label="Toggle menu">
           {open ? <X /> : <Menu />}
         </button>
       </div>
