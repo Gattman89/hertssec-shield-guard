@@ -16,9 +16,9 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "HertsSec Security Services | Hertfordshire Security Company" },
+      { title: "HertsShield Security Services | Hertfordshire Security Company" },
       { name: "description", content: "Hertfordshire security company providing SIA-licensed manned guarding, event security, construction site security and mobile patrols across Hertfordshire." },
-      { property: "og:title", content: "HertsSec Security Services | Hertfordshire Security Company" },
+      { property: "og:title", content: "HertsShield Security Services | Hertfordshire Security Company" },
       { property: "og:description", content: "SIA-licensed manned guarding, event security and construction site security across Hertfordshire." },
       { name: "keywords", content: "Hertfordshire security company, manned guarding Hertfordshire, event security Hertfordshire, construction site security Hertfordshire, SIA licensed security" },
     ],

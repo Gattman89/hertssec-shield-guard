@@ -63,7 +63,7 @@
 
 :root {
   --radius: 0.5rem;
-  /* HertsSec dark theme — black, white, dark red */
+  /* HertsShield dark theme — black, white, dark red */
   --background: oklch(0.08 0 0);
   --foreground: oklch(0.98 0 0);
   --card: oklch(0.12 0 0);
