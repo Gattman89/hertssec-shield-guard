@@ -303,24 +303,24 @@ function WhyUs() {
 
 function Areas() {
   return (
-    <section id="areas" className="py-24 sm:py-32 bg-card">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-16 items-center">
+    <section id="areas" className="py-16 sm:py-20 bg-card">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
         <div>
           <SectionHeader
             eyebrow="Areas Covered"
             title="Across Hertfordshire"
             desc="We provide security services throughout Hertfordshire and surrounding villages. If you don't see your town listed, get in touch — we likely cover it."
           />
-          <ul className="mt-10 grid grid-cols-2 gap-3" data-reveal>
+          <ul className="mt-8 grid grid-cols-2 gap-2" data-reveal>
             {areas.map((a) => (
-              <li key={a} className="flex items-center gap-3 text-sm font-medium text-foreground/90">
+              <li key={a} className="flex items-center gap-2 text-sm font-medium text-foreground/90">
                 <MapPin className="h-4 w-4 text-brand shrink-0" />
                 {a}
               </li>
             ))}
           </ul>
         </div>
-        <div data-reveal className="relative aspect-square rounded-lg border border-border bg-background overflow-hidden" style={{ boxShadow: "var(--shadow-card)" }}>
+        <div data-reveal className="relative aspect-[4/3] rounded-lg border border-border bg-background overflow-hidden" style={{ boxShadow: "var(--shadow-card)" }}>
           <iframe
             title="Hertfordshire Coverage Map"
             src="https://www.openstreetmap.org/export/embed.html?bbox=-0.65%2C51.65%2C0.20%2C52.10&layer=mapnik&marker=51.8055%2C-0.2008"
@@ -328,9 +328,9 @@ function Areas() {
             loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-tr from-background/40 via-transparent to-brand/10 pointer-events-none" />
-          <div className="absolute bottom-4 left-4 right-4 bg-background/95 backdrop-blur border border-border rounded-md p-4 flex items-center gap-3">
-            <div className="h-10 w-10 rounded-md bg-brand flex items-center justify-center shrink-0">
-              <MapPin className="h-5 w-5 text-white" />
+          <div className="absolute bottom-3 left-3 right-3 bg-background/95 backdrop-blur border border-border rounded-md p-3 flex items-center gap-3">
+            <div className="h-9 w-9 rounded-md bg-brand flex items-center justify-center shrink-0">
+              <MapPin className="h-4 w-4 text-white" />
             </div>
             <div className="min-w-0">
               <div className="text-sm font-bold uppercase">Hertfordshire-wide coverage</div>
