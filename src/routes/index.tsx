@@ -98,11 +98,11 @@ function Header() {
     >
       {/* Full-width logo banner */}
       <a href="#home" className="block w-full bg-background border-b border-white/5">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex justify-center">
+        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-3 sm:py-5 flex justify-center">
           <img
             src={logoAsset.url}
             alt="HertsSec Security Services"
-            className={`w-auto transition-all duration-300 ${scrolled ? "h-20 sm:h-24" : "h-28 sm:h-40 lg:h-48"}`}
+            className={`w-auto transition-all duration-300 ${scrolled ? "h-24 sm:h-28" : "h-36 sm:h-44 lg:h-52"}`}
           />
         </div>
       </a>
