@@ -22,13 +22,13 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Hertfordshire security company providing SIA-licensed manned guarding, event security and construction site security across Hertfordshire." },
       { property: "og:title", content: "HertsShield Security Services | SIA Licensed Security in Hertfordshire" },
       { property: "og:description", content: "SIA-licensed manned guarding, event security and construction site security across Hertfordshire." },
-      { property: "og:url", content: "https://hertsshield-pro.lovable.app/" },
+      { property: "og:url", content: "https://hertsshield.co.uk" },
       { name: "keywords", content: "Hertfordshire security company, manned guarding Hertfordshire, event security Hertfordshire, construction site security Hertfordshire, SIA licensed security" },
       { property: "og:image", content: "https://hertsshield.co.uk/hertsshield-preview.png" },
       { name: "twitter:image", content: "https://hertsshield.co.uk/hertsshield-preview.png" },
     ],
     links: [
-      { rel: "canonical", href: "https://hertsshield-pro.lovable.app/" },
+      { rel: "canonical", href: "https://hertsshield.co.uk" },
     ],
     scripts: [
       {
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/")({
           name: "HertsShield Security Services",
           telephone: "+44 7710 430032",
           email: "info@hertsshield.co.uk",
-          url: "https://hertsshield-pro.lovable.app/",
+          url: "https://hertsshield.co.uk",
           address: {
             "@type": "PostalAddress",
             addressRegion: "Hertfordshire",
