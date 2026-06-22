@@ -432,6 +432,33 @@ function Field({ label, required, children }: { label: string; required?: boolea
   );
 }
 
+function Careers() {
+  return (
+    <section id="careers" className="py-16 sm:py-20 relative overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
+      <div className="absolute inset-0 opacity-10" style={{ backgroundImage: "radial-gradient(circle at 80% 20%, #B30000 0%, transparent 50%)" }} />
+      <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+        <div className="flex items-center justify-center gap-3 mb-3">
+          <div className="section-divider" />
+          <span className="text-xs font-bold uppercase tracking-[0.25em] text-brand">Careers</span>
+          <div className="section-divider" />
+        </div>
+        <h2 className="text-3xl sm:text-4xl font-bold uppercase leading-tight text-white">Join Our Professional Team</h2>
+        <p className="mt-4 text-white/80 max-w-2xl mx-auto">
+          We're always looking for reliable, professional security personnel across Hertfordshire. Send us your CV and a brief introduction — we'd love to hear from you.
+        </p>
+        <div className="mt-8 flex flex-wrap gap-4 justify-center">
+          <Button asChild size="lg" className="bg-brand hover:bg-brand/90 text-white h-12 px-7 text-base font-semibold uppercase tracking-wide">
+            <a href="mailto:info@hertsshield.co.uk?subject=Career%20Application%20%E2%80%94%20CV%20Enclosed">
+              <Mail className="h-5 w-5 mr-2" /> Send Your CV
+            </a>
+          </Button>
+        </div>
+        <div className="mt-3 text-sm text-white/70 break-all">info@hertsshield.co.uk</div>
+      </div>
+    </section>
+  );
+}
+
 function Contact() {
   return (
     <section id="contact" className="py-16 sm:py-20 bg-background">
