@@ -1,8 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
-import logoAsset from "@/assets/hertsshield-logo-cropped.png.asset.json";
-import heroAsset from "@/assets/hero-security.jpg.asset.json";
-const heroImage = heroAsset.url;
+import logoImage from "@/assets/hertsshield-logo-cropped.png";
+import heroImage from "@/assets/hero-security.jpg";
 import { useEffect, useRef, useState } from "react";
 import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
@@ -107,7 +106,7 @@ function Header() {
       <Link to="/" className="block w-full bg-background border-b border-white/5">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-3 sm:py-5 flex justify-center">
           <img
-            src={logoAsset.url}
+            src={logoImage}
             alt="HertsShield Security Services"
             className={`w-auto transition-all duration-300 ${scrolled ? "h-24 sm:h-28" : "h-36 sm:h-44 lg:h-52"}`}
           />
@@ -493,7 +492,7 @@ function Footer() {
     <footer className="bg-card border-t border-border">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-4 gap-8">
         <div className="md:col-span-2">
-          <img src={logoAsset.url} alt="HertsShield Security Services" className="h-12 w-auto mb-4" />
+          <img src={logoImage} alt="HertsShield Security Services" className="h-12 w-auto mb-4" />
           <p className="text-sm text-muted-foreground max-w-sm">
             HertsShield Security Services — Professional security across Hertfordshire. SIA-licensed manned guarding and event security.
           </p>
