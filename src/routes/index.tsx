@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { Link } from "@tanstack/react-router";
 import logoAsset from "@/assets/hertsshield-logo-cropped.png.asset.json";
 import heroAsset from "@/assets/hero-security.jpg.asset.json";
 const heroImage = heroAsset.url;
@@ -7,7 +8,7 @@ import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
   KeyRound, UserSquare2, Lock, Phone, MapPin, Menu, X, Check,
   Award, Clock, PoundSterling, Facebook, Instagram, Linkedin, FileCheck,
-  HeartPulse, Users,
+  HeartPulse, Users, Mail,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -64,6 +65,7 @@ const navLinks = [
   { href: "#about", label: "About Us" },
   { href: "#services", label: "Services" },
   { href: "#areas", label: "Areas Covered" },
+  { href: "/careers", label: "Careers" },
   { href: "#contact", label: "Contact Us" },
 ];
 
@@ -102,7 +104,7 @@ function Header() {
       }`}
     >
       {/* Full-width logo banner */}
-      <a href="#home" className="block w-full bg-background border-b border-white/5">
+      <Link to="/" className="block w-full bg-background border-b border-white/5">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-3 sm:py-5 flex justify-center">
           <img
             src={logoAsset.url}
@@ -110,14 +112,20 @@ function Header() {
             className={`w-auto transition-all duration-300 ${scrolled ? "h-24 sm:h-28" : "h-36 sm:h-44 lg:h-52"}`}
           />
         </div>
-      </a>
+      </Link>
       {/* Nav row */}
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex items-center justify-between h-14">
         <nav className="hidden lg:flex items-center gap-8 mx-auto">
           {navLinks.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm font-semibold text-foreground/85 hover:text-brand transition-colors uppercase tracking-wide">
-              {l.label}
-            </a>
+            l.href.startsWith("/") ? (
+              <Link key={l.href} to={l.href} className="text-sm font-semibold text-foreground/85 hover:text-brand transition-colors uppercase tracking-wide">
+                {l.label}
+              </Link>
+            ) : (
+              <a key={l.href} href={l.href} className="text-sm font-semibold text-foreground/85 hover:text-brand transition-colors uppercase tracking-wide">
+                {l.label}
+              </a>
+            )
           ))}
           <Button asChild size="lg" className="bg-brand hover:bg-brand/90 text-white font-semibold uppercase tracking-wide ml-4">
             <a href="#quote">Request a Quote</a>
@@ -132,9 +140,15 @@ function Header() {
         <div className="lg:hidden bg-background border-t border-border">
           <div className="px-4 py-4 flex flex-col gap-4">
             {navLinks.map((l) => (
-              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-sm font-semibold uppercase tracking-wide text-foreground/85">
-                {l.label}
-              </a>
+              l.href.startsWith("/") ? (
+                <Link key={l.href} to={l.href} onClick={() => setOpen(false)} className="text-sm font-semibold uppercase tracking-wide text-foreground/85">
+                  {l.label}
+                </Link>
+              ) : (
+                <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-sm font-semibold uppercase tracking-wide text-foreground/85">
+                  {l.label}
+                </a>
+              )
             ))}
             <Button asChild className="bg-brand hover:bg-brand/90 text-white font-semibold uppercase">
               <a href="#quote" onClick={() => setOpen(false)}>Request a Quote</a>
@@ -348,8 +362,26 @@ function Quote() {
   const formRef = useRef<HTMLFormElement>(null);
   const onSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Thanks — we'll be in touch within 24 hours.");
-    formRef.current?.reset();
+    const form = formRef.current;
+    if (!form) return;
+    const data = new FormData(form);
+    const get = (k: string) => (data.get(k) as string) || "";
+    const subject = `Security Enquiry — ${get("type") || "New Quote"}`;
+    const body = [
+      `Name: ${get("name")}`,
+      `Company: ${get("company")}`,
+      `Email: ${get("email")}`,
+      `Phone: ${get("phone")}`,
+      `Type of Security: ${get("type")}`,
+      `Location: ${get("location")}`,
+      `Date Required: ${get("date")}`,
+      `Duration: ${get("duration")}`,
+      ``,
+      `Message:`,
+      get("message"),
+    ].join("\n");
+    window.location.href = `mailto:info@hertsshield.co.uk?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    toast.success("Opening your email app — your enquiry will be sent to info@hertsshield.co.uk");
   };
   return (
     <section id="quote" className="py-16 sm:py-20 relative overflow-hidden" style={{ background: "var(--gradient-hero)" }}>
@@ -414,6 +446,16 @@ function Contact() {
             <div className="text-sm text-muted-foreground mt-1">24/7 enquiries — speak to a real person</div>
           </div>
         </a>
+        <a href="mailto:info@hertsshield.co.uk" data-reveal className="group bg-card border border-border rounded-lg p-8 hover:border-brand transition-colors flex items-start gap-4">
+          <div className="h-12 w-12 rounded-md bg-brand flex items-center justify-center shrink-0">
+            <Mail className="h-6 w-6 text-white" />
+          </div>
+          <div className="min-w-0">
+            <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Email Us</div>
+            <div className="text-xl sm:text-2xl font-bold group-hover:text-brand transition-colors break-all">info@hertsshield.co.uk</div>
+            <div className="text-sm text-muted-foreground mt-1">Send your enquiry — we'll reply within 24 hours</div>
+          </div>
+        </a>
       </div>
     </section>
   );
@@ -440,7 +482,13 @@ function Footer() {
           <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-3">Quick Links</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             {navLinks.map((l) => (
-              <li key={l.href}><a href={l.href} className="hover:text-brand transition-colors">{l.label}</a></li>
+              <li key={l.href}>
+                {l.href.startsWith("/") ? (
+                  <Link to={l.href} className="hover:text-brand transition-colors">{l.label}</Link>
+                ) : (
+                  <a href={l.href} className="hover:text-brand transition-colors">{l.label}</a>
+                )}
+              </li>
             ))}
           </ul>
         </div>
@@ -448,6 +496,7 @@ function Footer() {
           <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-3">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-brand mt-0.5 shrink-0" /> 07710430032</li>
+            <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-brand mt-0.5 shrink-0" /> <a href="mailto:info@hertsshield.co.uk" className="hover:text-brand transition-colors break-all">info@hertsshield.co.uk</a></li>
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> Hertfordshire, United Kingdom</li>
           </ul>
         </div>
