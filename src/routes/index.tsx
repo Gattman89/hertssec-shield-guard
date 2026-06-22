@@ -18,16 +18,11 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "HertsShield Security Services | SIA Licensed Security in Hertfordshire" },
-      { name: "description", content: "Professional SIA-licensed security services across Hertfordshire, including event security, construction security and mobile patrols." },
-      { property: "og:title", content: "HertsShield Security Services | SIA Licensed Security in Hertfordshire" },
-      { property: "og:description", content: "Professional SIA-licensed security services across Hertfordshire, including event security, construction security and mobile patrols." },
+      { title: "Hertfordshire Security Company | HertsShield" },
+      { name: "description", content: "Hertfordshire security company providing SIA-licensed manned guarding, event security and construction site security across Hertfordshire." },
+      { property: "og:title", content: "Hertfordshire Security Company — SIA-Licensed Guards" },
+      { property: "og:description", content: "SIA-licensed manned guarding, event security and construction site security across Hertfordshire." },
       { property: "og:url", content: "https://hertsshield-pro.lovable.app/" },
-      { property: "og:image", content: "https://hertsshield.co.uk/hertsshield-preview.png" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:title", content: "HertsShield Security Services | SIA Licensed Security in Hertfordshire" },
-      { name: "twitter:description", content: "Professional SIA-licensed security services across Hertfordshire, including event security, construction security and mobile patrols." },
-      { name: "twitter:image", content: "https://hertsshield.co.uk/hertsshield-preview.png" },
       { name: "keywords", content: "Hertfordshire security company, manned guarding Hertfordshire, event security Hertfordshire, construction site security Hertfordshire, SIA licensed security" },
     ],
     links: [
