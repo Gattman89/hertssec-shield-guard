@@ -80,6 +80,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "HertsShield Security Services" },
       { name: "description", content: "SIA-licensed manned guarding, event security, and construction site security across Hertfordshire." },
+      { name: "google-site-verification", content: "t197lqaPet59p6skB6Y0B8Iy2C7rAYlYRc7uJQkiYYg" },
       { name: "author", content: "HertsShield Security Services" },
       { property: "og:title", content: "HertsShield Security Services" },
       { property: "og:description", content: "SIA-licensed manned guarding, event security, and construction site security across Hertfordshire." },
