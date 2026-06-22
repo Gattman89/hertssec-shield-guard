@@ -18,12 +18,14 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Hertfordshire Security Company | HertsShield" },
+      { title: "HertsShield Security Services | SIA Licensed Security in Hertfordshire" },
       { name: "description", content: "Hertfordshire security company providing SIA-licensed manned guarding, event security and construction site security across Hertfordshire." },
-      { property: "og:title", content: "Hertfordshire Security Company — SIA-Licensed Guards" },
+      { property: "og:title", content: "HertsShield Security Services | SIA Licensed Security in Hertfordshire" },
       { property: "og:description", content: "SIA-licensed manned guarding, event security and construction site security across Hertfordshire." },
       { property: "og:url", content: "https://hertsshield-pro.lovable.app/" },
       { name: "keywords", content: "Hertfordshire security company, manned guarding Hertfordshire, event security Hertfordshire, construction site security Hertfordshire, SIA licensed security" },
+      { property: "og:image", content: "https://hertsshield.co.uk/hertsshield-preview.png" },
+      { name: "twitter:image", content: "https://hertsshield.co.uk/hertsshield-preview.png" },
     ],
     links: [
       { rel: "canonical", href: "https://hertsshield-pro.lovable.app/" },
