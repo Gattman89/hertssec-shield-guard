@@ -550,6 +550,7 @@ function Index() {
         <WhyUs />
         <Areas />
         <Quote />
+        <Careers />
         <Contact />
       </main>
       <Footer />
