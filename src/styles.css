@@ -156,15 +156,15 @@
   html { scroll-behavior: smooth; }
 
   /* Offset anchor scroll so fixed header doesn't cover section titles */
-  section[id] { scroll-margin-top: 15rem; }
+  section[id] { scroll-margin-top: 11rem; }
   section[id="home"] { scroll-margin-top: 0; }
 
   @media (min-width: 640px) {
-    section[id] { scroll-margin-top: 18rem; }
+    section[id] { scroll-margin-top: 14rem; }
     section[id="home"] { scroll-margin-top: 0; }
   }
   @media (min-width: 1024px) {
-    section[id] { scroll-margin-top: 20rem; }
+    section[id] { scroll-margin-top: 16rem; }
     section[id="home"] { scroll-margin-top: 0; }
   }
 }
