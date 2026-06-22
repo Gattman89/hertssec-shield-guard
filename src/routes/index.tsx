@@ -134,6 +134,8 @@ function Header() {
           <img
             src={logoImage}
             alt="HertsShield Security Services"
+            width={600}
+            height={240}
             className={`w-auto transition-all duration-300 ${scrolled ? "h-24 sm:h-28" : "h-36 sm:h-44 lg:h-52"}`}
           />
         </div>
@@ -188,7 +190,15 @@ function Header() {
 function Hero() {
   return (
     <section id="home" className="relative min-h-[78vh] flex items-center overflow-hidden">
-      <img src={heroImage} alt="Professional security officer outside modern office" className="absolute inset-0 w-full h-full object-cover" width={1920} height={1080} />
+      <img
+        src={heroImage}
+        alt="Professional security officer outside modern office"
+        className="absolute inset-0 w-full h-full object-cover"
+        width={1920}
+        height={1080}
+        fetchPriority="high"
+        decoding="async"
+      />
       <div className="absolute inset-0 hero-overlay" />
       <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-transparent" />
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full pt-64 sm:pt-72 lg:pt-80 pb-16">
@@ -518,7 +528,7 @@ function Footer() {
     <footer className="bg-card border-t border-border">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-4 gap-8">
         <div className="md:col-span-2">
-          <img src={logoImage} alt="HertsShield Security Services" className="h-12 w-auto mb-4" />
+          <img src={logoImage} alt="HertsShield Security Services" width={300} height={120} className="h-12 w-auto mb-4" loading="lazy" />
           <p className="text-sm text-muted-foreground max-w-sm">
             HertsShield Security Services — Professional security across Hertfordshire. SIA-licensed manned guarding and event security.
           </p>
