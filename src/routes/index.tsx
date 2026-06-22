@@ -28,7 +28,7 @@ export const Route = createFileRoute("/")({
       { name: "twitter:image", content: "https://hertsshield.co.uk/hertsshield-preview.png" },
     ],
     links: [
-      { rel: "canonical", href: "https://hertsshield-pro.lovable.app/" },
+      { rel: "canonical", href: "https://hertsshield.co.uk" },
     ],
     scripts: [
       {
@@ -39,7 +39,7 @@ export const Route = createFileRoute("/")({
           name: "HertsShield Security Services",
           telephone: "+44 7710 430032",
           email: "info@hertsshield.co.uk",
-          url: "https://hertsshield-pro.lovable.app/",
+          url: "https://hertsshield.co.uk",
           address: {
             "@type": "PostalAddress",
             addressRegion: "Hertfordshire",
