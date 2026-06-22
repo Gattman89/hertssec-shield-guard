@@ -18,11 +18,37 @@ import { toast } from "sonner";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "HertsShield Security Services | Hertfordshire Security Company" },
+      { title: "Hertfordshire Security Company | HertsShield" },
       { name: "description", content: "Hertfordshire security company providing SIA-licensed manned guarding, event security and construction site security across Hertfordshire." },
-      { property: "og:title", content: "HertsShield Security Services | Hertfordshire Security Company" },
+      { property: "og:title", content: "Hertfordshire Security Company — SIA-Licensed Guards" },
       { property: "og:description", content: "SIA-licensed manned guarding, event security and construction site security across Hertfordshire." },
+      { property: "og:url", content: "https://hertsshield-pro.lovable.app/" },
       { name: "keywords", content: "Hertfordshire security company, manned guarding Hertfordshire, event security Hertfordshire, construction site security Hertfordshire, SIA licensed security" },
+    ],
+    links: [
+      { rel: "canonical", href: "https://hertsshield-pro.lovable.app/" },
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "HertsShield Security Services",
+          telephone: "+44 7710 430032",
+          email: "info@hertsshield.co.uk",
+          url: "https://hertsshield-pro.lovable.app/",
+          address: {
+            "@type": "PostalAddress",
+            addressRegion: "Hertfordshire",
+            addressCountry: "GB",
+          },
+          areaServed: [
+            "Hertford", "Ware", "St Albans", "Stevenage", "Bishop's Stortford",
+            "Welwyn Garden City", "Hatfield", "Harpenden", "Hitchin",
+          ].map((name) => ({ "@type": "City", name })),
+        }),
+      },
     ],
   }),
   ssr: false,
