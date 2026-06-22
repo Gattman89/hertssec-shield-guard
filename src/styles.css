@@ -154,6 +154,19 @@
     letter-spacing: 0.01em;
   }
   html { scroll-behavior: smooth; }
+
+  /* Offset anchor scroll so fixed header doesn't cover section titles */
+  section[id] { scroll-margin-top: 15rem; }
+  section[id="home"] { scroll-margin-top: 0; }
+
+  @media (min-width: 640px) {
+    section[id] { scroll-margin-top: 18rem; }
+    section[id="home"] { scroll-margin-top: 0; }
+  }
+  @media (min-width: 1024px) {
+    section[id] { scroll-margin-top: 20rem; }
+    section[id="home"] { scroll-margin-top: 0; }
+  }
 }
 
 @utility text-brand {
