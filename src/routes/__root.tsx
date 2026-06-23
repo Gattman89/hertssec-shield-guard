@@ -115,6 +115,11 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en">
       <head>
         <HeadContent />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var h=location.hostname;if(h.indexOf('lovable.app')!==-1||h.indexOf('localhost')!==-1){var m=document.createElement('meta');m.name='robots';m.content='noindex, nofollow';document.head.appendChild(m);}}catch(e){}})();`,
+          }}
+        />
       </head>
       <body>
         {children}
