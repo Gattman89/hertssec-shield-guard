@@ -81,6 +81,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { title: "HertsShield Security Services | SIA Licensed Security in Hertfordshire" },
       { name: "description", content: "SIA-licensed manned guarding, event security, and construction site security across Hertfordshire." },
       { name: "google-site-verification", content: "t197lqaPet59p6skB6Y0B8Iy2C7rAYlYRc7uJQkiYYg" },
+      { name: "google-site-verification", content: "To2KFkPTqK0vzeKTNtaHu6J28KHYj4Fbs4-tVhyHohk" },
       { name: "author", content: "HertsShield Security Services" },
       { property: "og:title", content: "HertsShield Security Services | SIA Licensed Security in Hertfordshire" },
       { property: "og:description", content: "SIA-licensed manned guarding, event security, and construction site security across Hertfordshire." },
