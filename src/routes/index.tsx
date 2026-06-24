@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
   KeyRound, UserSquare2, Lock, Phone, MapPin, Menu, X, Check,
-  Award, Clock, PoundSterling, Facebook, Instagram, Linkedin, FileCheck,
+  Award, Clock, PoundSterling, Facebook, Instagram, FileCheck,
   HeartPulse, Users, Mail,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -535,11 +535,12 @@ function Footer() {
             HertsShield Security Services — Professional security across Hertfordshire. SIA-licensed manned guarding and event security.
           </p>
           <div className="flex gap-3 mt-5">
-            {[Facebook, Instagram, Linkedin].map((Icon, i) => (
-              <a key={i} href="#" aria-label="Social" className="h-9 w-9 rounded-md border border-border flex items-center justify-center hover:bg-brand hover:border-brand hover:text-white transition-colors">
-                <Icon className="h-4 w-4" />
-              </a>
-            ))}
+            <a href="https://www.facebook.com/p/Herts-Shield-61591085112957/" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="h-9 w-9 rounded-md border border-border flex items-center justify-center hover:bg-brand hover:border-brand hover:text-white transition-colors">
+              <Facebook className="h-4 w-4" />
+            </a>
+            <a href="https://www.instagram.com/hertsshield" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="h-9 w-9 rounded-md border border-border flex items-center justify-center hover:bg-brand hover:border-brand hover:text-white transition-colors">
+              <Instagram className="h-4 w-4" />
+            </a>
           </div>
         </div>
         <div>
