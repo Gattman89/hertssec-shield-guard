@@ -73,7 +73,7 @@ const reasons = [
   { icon: Award, title: "SIA Licensed Personnel" },
   { icon: FileCheck, title: "Enhanced DBS Checked" },
   { icon: HeartPulse, title: "First Aid & ACT Trained" },
-  { icon: Users, title: "Led by 20+ Years Industry Experience" },
+  { icon: Users, title: "Led by 20+ years of industry experience" },
   { icon: ShieldCheck, title: "Professional and Reliable Service" },
   { icon: MapPin, title: "Local Hertfordshire-Based Company" },
   { icon: Lock, title: "Flexible Security Solutions" },
