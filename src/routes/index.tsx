@@ -13,6 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import HertfordshireMap from "@/components/HertfordshireMap";
 import { toast } from "sonner";
 
 export const Route = createFileRoute("/")({
@@ -373,12 +374,7 @@ function Areas() {
           </ul>
         </div>
         <div data-reveal className="relative aspect-[4/3] rounded-lg border border-border bg-background overflow-hidden" style={{ boxShadow: "var(--shadow-card)" }}>
-          <iframe
-            title="Hertfordshire Coverage Map"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.65%2C51.65%2C0.20%2C52.10&layer=mapnik&marker=51.8055%2C-0.2008"
-            className="w-full h-full grayscale contrast-125 brightness-75"
-            loading="lazy"
-          />
+          <HertfordshireMap />
           <div className="absolute inset-0 bg-gradient-to-tr from-background/40 via-transparent to-brand/10 pointer-events-none" />
           <div className="absolute bottom-3 left-3 right-3 bg-background/95 backdrop-blur border border-border rounded-md p-3 flex items-center gap-3">
             <div className="h-9 w-9 rounded-md bg-brand flex items-center justify-center shrink-0">
