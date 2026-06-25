@@ -73,7 +73,7 @@ const reasons = [
   { icon: Award, title: "SIA Licensed Personnel" },
   { icon: FileCheck, title: "Enhanced DBS Checked" },
   { icon: HeartPulse, title: "First Aid & ACT Trained" },
-  { icon: Users, title: "Led by 20+ years of industry experience" },
+  { icon: Users, title: "Led by 20+ Years Industry Experience" },
   { icon: ShieldCheck, title: "Professional and Reliable Service" },
   { icon: MapPin, title: "Local Hertfordshire-Based Company" },
   { icon: Lock, title: "Flexible Security Solutions" },
@@ -374,8 +374,8 @@ function Areas() {
         </div>
         <div data-reveal className="relative aspect-[4/3] rounded-lg border border-border bg-background overflow-hidden" style={{ boxShadow: "var(--shadow-card)" }}>
           <iframe
-            title="Hertford Coverage Map"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.12%2C51.77%2C-0.03%2C51.82&layer=mapnik&marker=51.7959%2C-0.0772"
+            title="Hertfordshire Coverage Map"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.65%2C51.65%2C0.20%2C52.10&layer=mapnik&marker=51.8055%2C-0.2008"
             className="w-full h-full grayscale contrast-125 brightness-75"
             loading="lazy"
           />
@@ -528,7 +528,7 @@ function Contact() {
 function Footer() {
   return (
     <footer className="bg-card border-t border-border">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-3 gap-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-4 gap-8">
         <div className="md:col-span-2">
           <img src={logoImage} alt="HertsShield Security Services" width={300} height={120} className="h-12 w-auto mb-4" loading="lazy" />
           <p className="text-sm text-muted-foreground max-w-sm">
@@ -542,6 +542,20 @@ function Footer() {
               <Instagram className="h-4 w-4" />
             </a>
           </div>
+        </div>
+        <div>
+          <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-3">Quick Links</h4>
+          <ul className="space-y-2 text-sm text-muted-foreground">
+            {navLinks.map((l) => (
+              <li key={l.href}>
+                {l.href.startsWith("/") ? (
+                  <Link to={l.href} className="hover:text-brand transition-colors">{l.label}</Link>
+                ) : (
+                  <a href={l.href} className="hover:text-brand transition-colors">{l.label}</a>
+                )}
+              </li>
+            ))}
+          </ul>
         </div>
         <div>
           <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-3">Contact</h4>
