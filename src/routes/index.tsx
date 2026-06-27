@@ -378,8 +378,8 @@ function Areas() {
         </div>
         <div data-reveal className="relative aspect-[4/3] rounded-lg border border-border bg-background overflow-hidden" style={{ boxShadow: "var(--shadow-card)" }}>
           <iframe
-            title="Hertfordshire Coverage Map"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.65%2C51.65%2C0.20%2C52.10&layer=mapnik&marker=51.8055%2C-0.2008"
+            title="Hertford Coverage Map"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.17%2C51.76%2C0.01%2C51.84&layer=mapnik&marker=51.7959%2C-0.0814"
             className="w-full h-full grayscale contrast-125 brightness-75"
             loading="lazy"
           />
