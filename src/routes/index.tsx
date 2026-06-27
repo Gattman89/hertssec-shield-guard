@@ -7,7 +7,7 @@ import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
   KeyRound, UserSquare2, Lock, Phone, MapPin, Menu, X, Check,
   Award, Clock, PoundSterling, Facebook, Instagram, FileCheck,
-  HeartPulse, Users, Mail,
+  HeartPulse, Users, Mail, Clapperboard,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -42,7 +42,10 @@ export const Route = createFileRoute("/")({
           url: "https://hertsshield.co.uk",
           address: {
             "@type": "PostalAddress",
-            addressRegion: "Hertfordshire",
+            streetAddress: "The Townhouse, 114-116 Fore Street",
+            addressLocality: "Hertford",
+            addressRegion: "Herts",
+            postalCode: "SG14 1AJ",
             addressCountry: "GB",
           },
           areaServed: [
@@ -67,6 +70,7 @@ const services = [
   { icon: Shield, title: "Static Guarding", desc: "Dedicated officers stationed at fixed posts to deter and respond." },
   { icon: KeyRound, title: "Lock & Unlock Services", desc: "Reliable opening and closing of premises with full key-holding." },
   { icon: UserSquare2, title: "Reception & Concierge", desc: "Front-of-house security delivered with first-class customer service." },
+  { icon: Clapperboard, title: "Movie & Film Set Security", desc: "Discreet, professional on-set protection for productions, studios and location shoots." },
 ];
 
 const reasons = [
@@ -374,8 +378,8 @@ function Areas() {
         </div>
         <div data-reveal className="relative aspect-[4/3] rounded-lg border border-border bg-background overflow-hidden" style={{ boxShadow: "var(--shadow-card)" }}>
           <iframe
-            title="Hertfordshire Coverage Map"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.65%2C51.65%2C0.20%2C52.10&layer=mapnik&marker=51.8055%2C-0.2008"
+            title="Hertford Coverage Map"
+            src="https://www.openstreetmap.org/export/embed.html?bbox=-0.17%2C51.76%2C0.01%2C51.84&layer=mapnik&marker=51.7959%2C-0.0814"
             className="w-full h-full grayscale contrast-125 brightness-75"
             loading="lazy"
           />
@@ -562,7 +566,7 @@ function Footer() {
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-brand mt-0.5 shrink-0" /> 07710430032</li>
             <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-brand mt-0.5 shrink-0" /> <a href="mailto:info@hertsshield.co.uk" className="hover:text-brand transition-colors break-all">info@hertsshield.co.uk</a></li>
-            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> Hertfordshire, United Kingdom</li>
+            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> <span>HertsShield Ltd<br />The Townhouse<br />114-116 Fore Street<br />Hertford<br />Herts<br />SG14 1AJ</span></li>
           </ul>
         </div>
       </div>
