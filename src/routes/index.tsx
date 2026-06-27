@@ -42,7 +42,10 @@ export const Route = createFileRoute("/")({
           url: "https://hertsshield.co.uk",
           address: {
             "@type": "PostalAddress",
-            addressRegion: "Hertfordshire",
+            streetAddress: "The Townhouse, 114-116 Fore Street",
+            addressLocality: "Hertford",
+            addressRegion: "Herts",
+            postalCode: "SG14 1AJ",
             addressCountry: "GB",
           },
           areaServed: [
