@@ -566,7 +566,7 @@ function Footer() {
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-brand mt-0.5 shrink-0" /> 07710430032</li>
             <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-brand mt-0.5 shrink-0" /> <a href="mailto:info@hertsshield.co.uk" className="hover:text-brand transition-colors break-all">info@hertsshield.co.uk</a></li>
-            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> Hertfordshire, United Kingdom</li>
+            <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> <span>HertsShield Ltd<br />The Townhouse<br />114-116 Fore Street<br />Hertford<br />Herts<br />SG14 1AJ</span></li>
           </ul>
         </div>
       </div>
