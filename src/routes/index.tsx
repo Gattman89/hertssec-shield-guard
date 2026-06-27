@@ -67,6 +67,7 @@ const services = [
   { icon: Shield, title: "Static Guarding", desc: "Dedicated officers stationed at fixed posts to deter and respond." },
   { icon: KeyRound, title: "Lock & Unlock Services", desc: "Reliable opening and closing of premises with full key-holding." },
   { icon: UserSquare2, title: "Reception & Concierge", desc: "Front-of-house security delivered with first-class customer service." },
+  { icon: Clapperboard, title: "Movie & Film Set Security", desc: "Discreet, professional on-set protection for productions, studios and location shoots." },
 ];
 
 const reasons = [
