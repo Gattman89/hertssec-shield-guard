@@ -7,7 +7,7 @@ import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
   KeyRound, UserSquare2, Lock, Phone, MapPin, Menu, X, Check,
   Award, Clock, PoundSterling, Facebook, Instagram, FileCheck,
-  HeartPulse, Users, Mail,
+  HeartPulse, Users, Mail, Clapperboard,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
