@@ -134,6 +134,14 @@ function Header() {
         scrolled ? "bg-background/95 backdrop-blur border-b border-border" : "bg-background/85 backdrop-blur-sm border-b border-white/10"
       }`}
     >
+      {/* Top contact bar */}
+      <div className="bg-brand text-white text-xs sm:text-sm">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-2 flex items-center justify-center gap-2">
+          <Phone className="h-3.5 w-3.5" />
+          <span className="font-semibold uppercase tracking-wide">Call us 24/7</span>
+          <a href="tel:07710430032" className="font-bold underline underline-offset-2 hover:text-white/80 transition-colors">07710430032</a>
+        </div>
+      </div>
       {/* Full-width logo banner */}
       <Link to="/" className="block w-full bg-background border-b border-white/5">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 py-3 sm:py-5 flex justify-center">
