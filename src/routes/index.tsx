@@ -183,9 +183,6 @@ function Header() {
                 </a>
               )
             ))}
-            <a href="tel:01992364110" onClick={() => setOpen(false)} className="flex items-center justify-center gap-2 text-sm font-bold text-brand uppercase tracking-wide py-2">
-              <Phone className="h-4 w-4" /> 01992 364110
-            </a>
             <Button asChild className="bg-brand hover:bg-brand/90 text-white font-semibold uppercase">
               <a href="#quote" onClick={() => setOpen(false)}>Request a Quote</a>
             </Button>
