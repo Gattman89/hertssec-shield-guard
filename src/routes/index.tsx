@@ -37,7 +37,7 @@ export const Route = createFileRoute("/")({
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
           name: "HertsShield Security Services",
-          telephone: "+44 7710 430032",
+          telephone: "+44 1992 364110",
           email: "info@hertsshield.co.uk",
           url: "https://hertsshield.co.uk",
           address: {
@@ -160,6 +160,9 @@ function Header() {
               </a>
             )
           ))}
+          <a href="tel:01992364110" className="flex items-center gap-2 text-sm font-bold text-brand hover:text-brand/80 uppercase tracking-wide">
+            <Phone className="h-4 w-4" /> 01992 364110
+          </a>
           <Button asChild size="lg" className="bg-brand hover:bg-brand/90 text-white font-semibold uppercase tracking-wide ml-4">
             <a href="#quote">Request a Quote</a>
           </Button>
@@ -183,6 +186,9 @@ function Header() {
                 </a>
               )
             ))}
+            <a href="tel:01992364110" onClick={() => setOpen(false)} className="flex items-center justify-center gap-2 text-sm font-bold text-brand uppercase tracking-wide py-2">
+              <Phone className="h-4 w-4" /> 01992 364110
+            </a>
             <Button asChild className="bg-brand hover:bg-brand/90 text-white font-semibold uppercase">
               <a href="#quote" onClick={() => setOpen(false)}>Request a Quote</a>
             </Button>
@@ -209,7 +215,7 @@ function Hero() {
       <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-transparent" />
       <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 w-full pt-64 sm:pt-72 lg:pt-80 pb-16">
         <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur px-4 py-1.5 mb-5">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/5 backdrop-blur px-4 py-1.5 mb-5 invisible">
             <ShieldCheck className="h-4 w-4 text-brand" />
             <span className="text-xs font-semibold uppercase tracking-widest text-white/90">SIA Licensed · Hertfordshire</span>
           </div>
@@ -504,13 +510,13 @@ function Contact() {
   return (
     <section id="contact" className="py-16 sm:py-20 bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-4">
-        <a href="tel:07710430032" data-reveal className="group bg-card border border-border rounded-lg p-8 hover:border-brand transition-colors flex items-start gap-4">
+        <a href="tel:01992364110" data-reveal className="group bg-card border border-border rounded-lg p-8 hover:border-brand transition-colors flex items-start gap-4">
           <div className="h-12 w-12 rounded-md bg-brand flex items-center justify-center shrink-0">
             <Phone className="h-6 w-6 text-white" />
           </div>
           <div className="min-w-0">
             <div className="text-xs uppercase tracking-widest text-muted-foreground mb-1">Call Us</div>
-            <div className="text-xl sm:text-2xl font-bold group-hover:text-brand transition-colors">07710430032</div>
+            <div className="text-xl sm:text-2xl font-bold group-hover:text-brand transition-colors">01992 364110</div>
             <div className="text-sm text-muted-foreground mt-1">24/7 enquiries — speak to a real person</div>
           </div>
         </a>
@@ -564,7 +570,7 @@ function Footer() {
         <div>
           <h4 className="text-xs uppercase tracking-widest font-bold text-brand mb-3">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-brand mt-0.5 shrink-0" /> 07710430032</li>
+            <li className="flex items-start gap-2"><Phone className="h-4 w-4 text-brand mt-0.5 shrink-0" /> <a href="tel:01992364110" className="hover:text-brand transition-colors">01992 364110</a></li>
             <li className="flex items-start gap-2"><Mail className="h-4 w-4 text-brand mt-0.5 shrink-0" /> <a href="mailto:info@hertsshield.co.uk" className="hover:text-brand transition-colors break-all">info@hertsshield.co.uk</a></li>
             <li className="flex items-start gap-2"><MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" /> <span>HertsShield Ltd<br />The Townhouse<br />114–116 Fore Street<br />Hertford<br />England<br />SG14 1AJ</span></li>
           </ul>
