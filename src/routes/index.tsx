@@ -1,19 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Link } from "@tanstack/react-router";
-import logoImage from "@/assets/hertsshield-logo-cropped.png";
-import heroImage from "@/assets/hero-security.jpg";
-import { useEffect, useRef, useState } from "react";
-import {
-  Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
-  KeyRound, UserSquare2, Lock, Phone, MapPin, Menu, X, Check,
-  Award, Clock, PoundSterling, Facebook, Instagram, FileCheck,
-  HeartPulse, Users, Mail, Clapperboard,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { toast } from "sonner";
+import { Hero, About, WhyUs, SiteShell } from "@/components/site/shared";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -59,7 +45,18 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const services = [
+function Index() {
+  return (
+    <SiteShell>
+      <Hero />
+      <About />
+      <WhyUs />
+    </SiteShell>
+  );
+}
+
+// Legacy content moved to /components/site/shared.tsx. Kept as reference below.
+const _unusedServices = [
   { icon: ShieldCheck, title: "Manned Guarding", desc: "Visible, professional SIA-licensed officers protecting your premises 24/7." },
   { icon: HardHat, title: "Construction Site Security", desc: "Site protection, access control and asset safeguarding across Hertfordshire builds." },
   { icon: Beer, title: "Pub, Bar & Club Security", desc: "Door supervision and crowd management trained for licensed venues." },
