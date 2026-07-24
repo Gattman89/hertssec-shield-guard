@@ -178,9 +178,14 @@ export function Hero() {
               <Link to="/services">Our Services</Link>
             </Button>
           </div>
-          <a href="tel:01992364110" className="mt-4 inline-flex items-center gap-2 text-lg font-bold text-white hover:text-brand transition-colors">
-            <Phone className="h-5 w-5 text-brand" /> 01992 364110
-          </a>
+          <div className="mt-4 flex flex-wrap items-center gap-x-6 gap-y-2">
+            <a href="tel:01992364110" className="inline-flex items-center gap-2 text-lg font-bold text-white hover:text-brand transition-colors">
+              <Phone className="h-5 w-5 text-brand" /> 01992 364110
+            </a>
+            <a href="mailto:info@hertsshield.co.uk" className="inline-flex items-center gap-2 text-lg font-bold text-white hover:text-brand transition-colors">
+              <Mail className="h-5 w-5 text-brand" /> info@hertsshield.co.uk
+            </a>
+          </div>
           <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 text-sm text-white/70">
             <span className="flex items-center gap-2"><Check className="h-4 w-4 text-brand" /> 24/7 Coverage</span>
             <span className="flex items-center gap-2"><Check className="h-4 w-4 text-brand" /> Locally Based</span>
