@@ -160,6 +160,9 @@ function Header() {
               </a>
             )
           ))}
+          <a href="tel:01992364110" className="flex items-center gap-2 text-sm font-bold text-brand hover:text-brand/80 uppercase tracking-wide">
+            <Phone className="h-4 w-4" /> 01992 364110
+          </a>
           <Button asChild size="lg" className="bg-brand hover:bg-brand/90 text-white font-semibold uppercase tracking-wide ml-4">
             <a href="#quote">Request a Quote</a>
           </Button>
