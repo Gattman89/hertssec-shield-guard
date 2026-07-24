@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Hero, About, WhyUs, SiteShell } from "@/components/site/shared";
+import { Hero, Services, SiteShell } from "@/components/site/shared";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -47,8 +47,7 @@ function Index() {
   return (
     <SiteShell>
       <Hero />
-      <About />
-      <WhyUs />
+      <Services />
     </SiteShell>
   );
 }
