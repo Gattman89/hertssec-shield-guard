@@ -1,19 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Link } from "@tanstack/react-router";
-import logoImage from "@/assets/hertsshield-logo-cropped.png";
-import heroImage from "@/assets/hero-security.jpg";
-import { useEffect, useRef, useState } from "react";
-import {
-  Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
-  KeyRound, UserSquare2, Lock, Phone, MapPin, Menu, X, Check,
-  Award, Clock, PoundSterling, Facebook, Instagram, FileCheck,
-  HeartPulse, Users, Mail, Clapperboard,
-} from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
-import { toast } from "sonner";
+import { SiteChrome, Hero, WhyUs } from "@/components/site";
 
 export const Route = createFileRoute("/")({
   head: () => ({
