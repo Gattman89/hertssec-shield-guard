@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import logoImage from "@/assets/hertsshield-logo-cropped.png";
 import heroImage from "@/assets/hero-security.jpg";
+import gatisPortrait from "@/assets/gatis-portrait.jpg";
 import { useEffect, useRef, useState } from "react";
 import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
@@ -231,6 +232,48 @@ export function About() {
                   <div className="text-xs text-white/70">Trained · Licensed · Vetted</div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 mt-20 sm:mt-24">
+        <div className="text-center max-w-3xl mx-auto" data-reveal>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <div className="section-divider" />
+            <span className="text-xs font-bold uppercase tracking-[0.25em] text-brand">Meet the People</span>
+            <div className="section-divider" />
+          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold uppercase leading-tight">The Team Behind HertsShield</h2>
+        </div>
+        <div className="mt-10 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          <div className="bg-card border border-border rounded-lg overflow-hidden" data-reveal style={{ boxShadow: "var(--shadow-card)" }}>
+            <div className="aspect-[3/4] max-h-[420px] overflow-hidden">
+              <img src={gatisPortrait} alt="Gatis Gailitis — Director of HertsShield Security Services" className="w-full h-full object-cover object-top" loading="lazy" width={600} height={800} />
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold uppercase">Gatis Gailitis</h3>
+              <p className="text-sm font-semibold text-brand uppercase tracking-wide mt-1">Director</p>
+              <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                Gatis has extensive experience in the security industry, with a strong background in corporate security and manned guarding. He is committed to providing professional, reliable and high-quality security services, with a strong focus on customer service, client safety and maintaining high standards across every aspect of security operations.
+              </p>
+            </div>
+          </div>
+          <div className="bg-card border border-border rounded-lg overflow-hidden" data-reveal style={{ boxShadow: "var(--shadow-card)" }}>
+            <div className="aspect-[3/4] max-h-[420px] overflow-hidden bg-muted flex items-center justify-center">
+              <div className="text-center p-8">
+                <div className="h-24 w-24 rounded-full bg-brand/10 border-2 border-brand/30 flex items-center justify-center mx-auto">
+                  <Users className="h-10 w-10 text-brand" />
+                </div>
+                <p className="mt-4 text-sm text-muted-foreground">Photo coming soon</p>
+              </div>
+            </div>
+            <div className="p-6">
+              <h3 className="text-xl font-bold uppercase">Judith Elizondo</h3>
+              <p className="text-sm font-semibold text-brand uppercase tracking-wide mt-1">Business Development Manager</p>
+              <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
+                Judith has a strong background in customer service, data protection, administration and sales, with excellent communication and organisational skills. She is focused on building positive client relationships, supporting business development and ensuring a professional, responsive and customer-focused experience across all aspects of HertsShield's operations.
+              </p>
             </div>
           </div>
         </div>
