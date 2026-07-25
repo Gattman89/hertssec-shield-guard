@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import logoImage from "@/assets/hertsshield-logo-cropped.png";
 import heroImage from "@/assets/hero-security.jpg";
 import gatisPortrait from "@/assets/gatis-portrait.jpg";
+import judithPortrait from "@/assets/judith-portrait.jpg";
 import { useEffect, useRef, useState } from "react";
 import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
@@ -260,13 +261,8 @@ export function About() {
             </div>
           </div>
           <div className="bg-card border border-border rounded-lg overflow-hidden" data-reveal style={{ boxShadow: "var(--shadow-card)" }}>
-            <div className="aspect-[3/4] max-h-[420px] overflow-hidden bg-muted flex items-center justify-center">
-              <div className="text-center p-8">
-                <div className="h-24 w-24 rounded-full bg-brand/10 border-2 border-brand/30 flex items-center justify-center mx-auto">
-                  <Users className="h-10 w-10 text-brand" />
-                </div>
-                <p className="mt-4 text-sm text-muted-foreground">Photo coming soon</p>
-              </div>
+            <div className="aspect-[3/4] max-h-[420px] overflow-hidden">
+              <img src={judithPortrait} alt="Judith Elizondo — Business Development Manager at HertsShield Security Services" className="w-full h-full object-cover object-top" loading="lazy" width={600} height={800} />
             </div>
             <div className="p-6">
               <h3 className="text-xl font-bold uppercase">Judith Elizondo</h3>
