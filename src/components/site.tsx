@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import logoImage from "@/assets/hertsshield-logo-cropped.png";
 import heroImage from "@/assets/hero-security.jpg";
+import gatisPortrait from "@/assets/gatis-portrait.jpg";
 import { useEffect, useRef, useState } from "react";
 import {
   Shield, ShieldCheck, HardHat, Beer, CalendarDays, Building2, Briefcase,
