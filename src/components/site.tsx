@@ -546,7 +546,7 @@ export function Footer() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row justify-between gap-2 text-xs text-muted-foreground">
           <div>© {new Date().getFullYear()} HertsShield Security Services. All rights reserved.</div>
           <div>HERTSSHIELD LTD, Company Number: 17308881</div>
-          <div>SIA Licensed · Fully Insured</div>
+          <div>Insured | ICO Registered | SIA Licensed</div>
         </div>
       </div>
     </footer>
