@@ -317,7 +317,7 @@ export function WhyUs() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeader
           eyebrow="Why Choose Us"
-          title="The HertsShield Standard"
+          title="The HertsShield Difference"
           desc="Built on professionalism, local knowledge and genuine accountability."
         />
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-lg overflow-hidden border border-border">
