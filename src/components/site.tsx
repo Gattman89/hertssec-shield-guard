@@ -32,15 +32,10 @@ export const services = [
 ];
 
 export const reasons = [
-  { icon: Award, title: "SIA Licensed Personnel" },
-  { icon: FileCheck, title: "DBS checked" },
-  { icon: HeartPulse, title: "First Aid & ACT Trained" },
-  { icon: Users, title: "Led by 20+ years of industry experience" },
-  { icon: ShieldCheck, title: "Professional and Reliable Service" },
-  { icon: MapPin, title: "Local Hertfordshire-Based Company" },
-  { icon: Lock, title: "ICO registered" },
-  { icon: PoundSterling, title: "Competitive Pricing" },
-  { icon: Clock, title: "One-Off or Long-Term Contracts" },
+  { icon: Award, title: "Qualified & Vetted", desc: "SIA licensed, DBS or DBS Enhanced checked as well as First Aid and ACT trained personnel." },
+  { icon: Users, title: "Experienced & Reliable", desc: "Over 20 years of experience delivering professional security services." },
+  { icon: MapPin, title: "Local & Competitive", desc: "A Hertfordshire-based company offering responsive service at competitive rates." },
+  { icon: Clock, title: "Flexible Solutions", desc: "From one-off assignments to long-term security contracts, tailored to your needs." },
 ];
 
 export const areas = [
