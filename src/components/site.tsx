@@ -315,7 +315,7 @@ export function WhyUs() {
           title="The HertsShield Difference"
           desc="Built on professionalism, local knowledge and genuine accountability."
         />
-        <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-border rounded-lg overflow-hidden border border-border">
+        <div className="mt-10 grid sm:grid-cols-2 gap-px bg-border rounded-lg overflow-hidden border border-border">
           {reasons.map((r) => (
             <div key={r.title} data-reveal className="bg-background p-6 flex items-start gap-4 hover:bg-card transition-colors">
               <div className="shrink-0 h-10 w-10 rounded-md bg-brand flex items-center justify-center">
@@ -323,6 +323,7 @@ export function WhyUs() {
               </div>
               <div className="min-w-0">
                 <h3 className="text-base font-bold uppercase">{r.title}</h3>
+                <p className="mt-1 text-sm text-muted-foreground leading-relaxed">{r.desc}</p>
               </div>
             </div>
           ))}
