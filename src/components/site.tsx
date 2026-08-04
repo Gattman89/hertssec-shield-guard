@@ -327,10 +327,6 @@ export function WhyUs() {
                 <r.icon className="h-5 w-5 text-white" />
               </div>
               <div className="min-w-0">
-                <div className="flex items-center gap-2 mb-1">
-                  <Check className="h-3.5 w-3.5 text-brand" />
-                  <span className="text-xs uppercase tracking-widest text-muted-foreground">Standard</span>
-                </div>
                 <h3 className="text-base font-bold uppercase">{r.title}</h3>
               </div>
             </div>
